@@ -4,7 +4,7 @@
 
 a) Some text: publishing a web page
 
-b) code style
+b) Code style:
 
     $ ls
     hello-rxda.md
