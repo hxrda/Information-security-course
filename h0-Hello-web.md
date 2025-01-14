@@ -1,6 +1,6 @@
 # h1 - Hello web 
 
-##h2 - Paragraphs & code style
+## h2 - Paragraphs & code style
 
 a) Some text: publishing a web page
 
