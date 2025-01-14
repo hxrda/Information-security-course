@@ -10,4 +10,4 @@ b) code style
     hello-rxda.md
 
 ## h2 - references 
-Karvinen 2025 - Information security a https://terokarvinen.com/information-security/ 
+Karvinen 2025 - Information security at https://terokarvinen.com/information-security/ 
