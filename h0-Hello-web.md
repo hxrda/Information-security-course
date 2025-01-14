@@ -3,6 +3,7 @@
 a) h0 exercise: publishing a web page
 
 b) code style
+
     $ ls
     hello-roda.md
 
