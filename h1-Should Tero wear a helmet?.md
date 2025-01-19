@@ -189,7 +189,8 @@
     - Implement active inventory/asset control management (IT resources & other enterprise assets, e.g. end-user, network or IoT devices and servers)
     - Apply security configurations to both hardware and software
     - Actively manage backups & data recovery
-    - Implement strong identity and access management – IAM. Manage and secure user accounts (strong passwords, 2FA/MFA, principle of least privilege, other access controls, password manager as a supportive tool etc.)
+    - Implement strong identity and access management – IAM. Manage and secure user accounts (strong passwords, 2FA/MFA, principle of least privilege, 
+      other access controls, password manager as a supportive tool etc.)
     - Audit log management
     - Be vigilant of suspicious links in various contexts, such as email scams (e.g. phishing attempts)
     - Utilize effective security software and tools, such as anti-malware/virus software and endpoint security solutions across your devices and networks
@@ -208,6 +209,33 @@
 
 
     
+## B) Threat model for imaginary company (HeliX)
 
-## B) Threat model for imaginary company
+### **Company description**
 
+    -HeliX is a personal/consumer genomics and biotechnology company based in Finland. The company provides direct-to-consumer DNA testing to generate reports relating toa         customer’s ancestry and genetic predispositions to health -related topics.  The customers provide a saliva sample in exchange for a personalized report and choose whether      they want their data kept strictly private or be used anonymized in scientific research. Focusing on security and privacy, HeliX states that customer genetic data is          protected and used ethically.
+
+### 1. What are we working on?
+
+
+•	<ins>**References**</ins>    
+- https://terokarvinen.com/information-security/#h1-should-tero-wear-a-helmet
+- Cyberthreats to Biotechnology 2021 PDF by HHS 
+- https://www.researchgate.net/figure/Ethical-aspects-of-the-23andMe-model-and-connections-with-Google-Information-flows_fig3_299521348
+- https://threat-modeling.com/threat-modeling-the-23andme-data-breach/
+- https://bmcmedethics.biomedcentral.com/articles/10.1186/s12910-016-0101-9
+- https://medium.com/@axialxyz/case-study-on-23andme-41f25c885c3c
+- https://aws.amazon.com/solutions/case-studies/23andMe-case-study/
+- https://en.wikipedia.org/wiki/23andMe_data_leak
+- https://www.vice.com/en/article/myheritage-hacked-data-breach-92-million/
+- https://www.theverge.com/2018/6/5/17430146/dna-myheritage-ancestry-accounts-compromised-hack-breach
+- https://blog.cloudflare.com/bigger-and-badder-how-ddos-attack-sizes-have-evolved-over-the-last-decade/
+- https://en.wikipedia.org/wiki/STRIDE_model
+- https://en.wikipedia.org/wiki/Threat_actor
+- https://www.mitnicksecurity.com/blog/common-hacking-techniques-2023?utm_source=chatgpt.com
+- https://www.biospace.com/biopharma-confronts-a-rising-tide-of-ransomware-attacks
+- https://www.infosecurity-magazine.com/news/enzo-biochem-hit-ransomware/?utm_source=chatgpt.com
+- https://www.tributech.io/blog/how-to-prevent-data-tampering
+- https://www.cypressdatadefense.com/blog/data-tampering-prevention/
+- https://www.wallarm.com/what/what-is-an-information-disclosure-examples-and-prevention
+- https://www.upguard.com/blog/prevent-data-breaches#toc-1  
