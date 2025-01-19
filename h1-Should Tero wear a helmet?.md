@@ -43,7 +43,8 @@
             
 •	**References** 
 
-    Braiterman et al 2020: Threat modeling manifesto at https://www.threatmodelingmanifesto.org/
+    Braiterman et al 2020: [Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/)
+
 
 
 ## A) Security Hygiene
