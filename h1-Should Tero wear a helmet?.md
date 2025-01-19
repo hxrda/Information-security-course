@@ -9,10 +9,10 @@
     
 •	**Threat modelling process**  
     - At its highest level, attempts to answer 4 key questions:  
-        1. What are we working on?  
-        2. What can go wrong?  
-        3. What are we going to do about it?  
-        4. Did we do a good enough job?  
+      1. What are we working on?  
+      2. What can go wrong?  
+      3. What are we going to do about it?  
+      4. Did we do a good enough job?  
     
 •	**Purpose of threat modelling**  
     - Helps identify potential threats or issues to be addressed and mitigated  
