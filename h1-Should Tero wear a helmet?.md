@@ -80,7 +80,66 @@
     Shostack 2022: [Welcome to the Worlds Shortest Threat Modeling Course](https://www.youtube.com/playlist?list=PLCVhBqLDKoOOZqKt74QI4pbDUnXSQo0nf)
 
 
-### 1.3
+### 1.3 OWASP CheatSheets – Thread Modeling  
+
+•	**Thread modeling definition** 
+
+    -A structured, repeatable process that models a particular system for the purpose of identifying and analyzing the security threats associated with it. The process allows to gain actionable insights into the security characteristics, strengths and gaps, of the particular system being examined. 
+    
+•	**Advantages of threat modelling** 
+
+    - Allows security to be built-into a system through identifying potential security issues early on during system design
+    - Increased security awareness due to requiring critical, creative and collaborative thinking, often incorporating the perspective of the threat actor. 
+    - Improves visibility of the target system / target of evaluation (TOE), since it requires deep knowledge of the system’s data flows, trust boundaries etc.
+    
+•	**The threat modelling process**
+
+    -Analyzes the system from an adversarial security perspective, focusing on how threat actors can exploit systems
+    -Threat modeling should be integrated into the SDLC process
+    -Threat modeling should be performed early and repeatedly throughout the systems development iterations/ phases and post development. I.e. the model should be continuously 
+     updated alongside the system.
+     
+    - At the high level, should answer 4 key questions:** 
+        1. What are we working on?
+        2. What can go wrong?
+        3. What are we going to do about it?
+        4. Did we do a good enough job?
+        
+    - While there is no single universally accepted standard for the modeling process, most approaches include (refer to 4 key questions):
+        1.System modeling
+            - Goal: understand the system (data, data flows, data stores, processes, trust boundaries, entities interacting with the system) so that you can understand the 
+              threats applicable to it. These often represent potential attack points.
+            - Approaches: Data flow diagrams (DFDs), Brainstorming
+        2. Threat identification, ranking (probability and impact) & prioritization
+            - Done in the context of the system being examined, based on the model
+            - Techniques & approaches: STRIDE, ATT&CK, LINDDUN, PASTA, OCTAVE
+        3. Risk response & mitigation strategies
+            - Goal: defining actionable responses to mitigate each threat identified
+            - List of responses:
+            - Mitigate, Eliminate, Transfer, Accept
+            - Tools for formulating responses: ASVS, CWE list, LINDDUN, PASTA
+        4. Review & validation
+            - The thread model must be reviewed by all stakeholders
+            - Areas of focus:
+                - Does the system model reflect the system?
+                - Have all threats been identified?
+                - For each threat, is there an agreed response strategy
+                - Have mitigation or response strategies been properly developed?
+                - Has the thread model been formally documented
+                - Can responses or mitigations be measured?
+                - Are the requirements and recommendations of the thread models measurable (success vs. failure)?
+
+•	**Challenges of threat modelling** 
+
+    - Lack of security knowledge and experience may hinder effective utilization of methodologies and frameworks to identify and model or rank threats and formulate response 
+      strategies
+    - Thread modelling process is time-consuming and complex
+    - Lack of effective communication interdepartmentally, e.g. due to non-shared terminology
+    - Fixes:Training, Supportive automation tools, Collaboration & cross-team workshops, Regular reviews
+
+•	<ins>**References**</ins>     
+    OWASP CheatSheets Series Team 2021: [Threat Modeling Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html) 
+
 
 ## A) Security Hygiene
 
