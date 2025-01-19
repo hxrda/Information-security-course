@@ -258,8 +258,7 @@ o	What must be done to serve/retain customers – Business continuity:
     - All of the abovementioned points contribute to company reputation both among individual consumers and partnered companies/ institutions (research, biotech/pharma…)
 
 o	Diagram of company systems:
-
-    -(x)
+    ![System diagram](h1-diagram.jpg)
 
 ### 2. What can go wrong?
 
