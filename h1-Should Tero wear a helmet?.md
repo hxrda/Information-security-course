@@ -41,8 +41,7 @@
         C) Patterns to avoid (anti-patterns)  
             - Hero threat modeler, Admiration of the problem, Overfocus on details, Single perfect representation    
             
-•	**References** 
-
+•	<ins>**References**</ins>   
     Braiterman et al 2020: [Threat Modeling Manifesto](https://www.threatmodelingmanifesto.org/)
 
 
