@@ -263,6 +263,41 @@ o	Diagram of company systems:
 
 ### 2. What can go wrong?
 
+**STRIDE (biggest risks)**
+
+o	**a) Spoofing**
+o	**b) Tampering**
+o	**c) Repudiation**
+o	**d) Information disclosure**
+o	**e) Denial of Service (DoS)**
+o	**f) Elevation of privilege**
+
+**Threat actors**
+
+    - State-sponsored actors interested in collecting genetic data for political purposes, genetic surveillance, bioweapon development etc.
+    - Cybercriminals motivated by financial reasons, e.g. demanding ransom for stolen data
+    - Ideologically motivated hacktivists who oppose companies being in possession of personal (gene) data.
+    - Insiders/employees misusing their access to sensitive data
+
+
+**Known TTPS (tactics, techniques, procedues)**
+
+    - Phishing
+    - Credential stuffing
+    - Social engineering
+    - DDoS attacks
+    - Ransomware attacks
+    - Man-in-the-middle attacks
+    - Supply chain attacks
+
+
+**COI**
+
+    - Capability: The attackers may possess the technical skill to exploit system vulnerabilities
+    - Opportunity: Genetic data and PII  may be particularly attractive as they can be exchanged for high monetary gain and or cause extensive damage
+    - Intent: Primarily financial or political
+
+
 ### 3. What are we going to do about it?
 
 ### 4. Did we do good enough job?
