@@ -343,7 +343,67 @@ o	**f) Elevation of privilege**
 
 ### 3. What are we going to do about it?
 
+•	**Mitigate** 
+
+    - Spoofing -> Use MFA for customer and partner accounts. Implement strong IAM and password hygiene. Implement breach or anomaly/unusual
+      activity detection to notify users. 
+    - Information disclosure/Data breaches -> Implement strong access controls, use end-to-end encryption for sensitive data, restrict
+      data access, implement data leak detection and management, implement API gateway security policies,  
+    - Tampering & Repudiation-> Regularly monitor and review of audit logs, enforce encryption of data, Use cryptographic signing for 
+      transactions and API calls, utilize e.g. HMAC, implement tramper-resistant logging (e.g. WORM), 
+    - DoS -> implement distributed DDoS protection, restrict rates of API request e.g. per session, utilize load balancing techniques
+    - Elevation of privileges -> Follow the principle of least priviledge, implement role based access
+    - Utilizing third party providers/services -> Utilize where relevant
+    - Besides the ones mentioned above, follow proper security hygiene & security best practices 
+    
+•	**Accept**
+
+    - Spoofing -> Users must carry some of the responsibility for protecting their credentials. 
+    - DoS -> Despite mitigation strategies, some risk for botnet attacks remains.
+    - Information disclosure, Tampering > Despite mitigation strategies, some risk may remain e.g. due to insider threats.
+    
+•	**Transfer**
+
+    - Utilize third party providers/ security service to transfer responsibility where possible if it makes sense to do so.
+
+
 ### 4. Did we do good enough job?
+
+•	**Does the diagram accurately reflect the system?**
+
+    - The diagram models the main components and processes of the system but requires more refinement for accuracy
+    - The diagram should be reviewed for completeness to ensure all (key) assets, data flows, entities and interactions
+      are accounted for
+    - Areas of improvement: clarify data flow representation, identify trust boundaries, pay more consideration to attack surfaces
+      and potential vulnerabilities
+
+•	**Have all threats been identified?**
+
+    - While the treat landscape has identified major threats/risks following the STRIDE method, further analysis should be performed to
+      ensure more comprehensive coverage of potential risks. 
+    - Consider utilizing other models alongside STRIDE for more comprehensive risk identification (e.g. Attack trees, CIA, ATT&CK, DREAD, VAST, LINDDUN…)
+    - Use more proper tools to calculate probabilities, impact values, monetary values and expected values in the risk analysis.
+
+•	**For each identified threat, has a response strategy been agreed upon? In case of mitigation strategies, do they reduce risk
+    to an acceptable level?**
+
+    - While some high-level response strategies have been proposed following the META framework, the treat model requires more detailed and
+      concrete suggestions for tools and actions to be taken. Justifications for chosen strategies should also be improved.
+    - The acceptable level of risk with regard to mitigation strategies is unclear as the effectiveness depends on the concrete implementation.
+
+•	**Has the threat model been formally documented. Are the artifacts from the threat model process stored in such a way that it can
+    be accessed by those with “need to know”?**
+    
+    - The treat model is documented to the degree as required by the associated course.
+    - In more official settings, the documentation should be more formal.
+
+•	**Can the agreed-upon mitigations be tested? Can success or failure of the requirements and recommendations from the threat model be measured?**
+
+    - Testing and validation methods are not mentioned in the threat model. As the model is lacking in concrete implementation propositions
+      and strategies, testing and measurement would be challenging and this point. 
+    - For the mitigation strategies to be tested, this should include e.g.: penetration testing and vulnerability assessments, security audits
+      and stress tests, social engineering simulation tests. Continuous revision of the thread model should also be implemented.
+
 
 
 •	<ins>**References**</ins>    
@@ -367,3 +427,6 @@ o	**f) Elevation of privilege**
 - https://www.cypressdatadefense.com/blog/data-tampering-prevention/
 - https://www.wallarm.com/what/what-is-an-information-disclosure-examples-and-prevention
 - https://www.upguard.com/blog/prevent-data-breaches#toc-1  
+- GPT prompts for brainstorming and ideation to be used as reference:
+> “Utilizing the STRIDE threat modelling method, what risks could be involved in each threat category of the particular system in question"
+> “Utilizing the META framework, what risk mitigation strategies could be used for the particular system in question, taking into account the identified risks”
