@@ -265,12 +265,55 @@ o	Diagram of company systems:
 
 **STRIDE (biggest risks)**
 
-o	**a) Spoofing**
-o	**b) Tampering**
-o	**c) Repudiation**
-o	**d) Information disclosure**
-o	**e) Denial of Service (DoS)**
-o	**f) Elevation of privilege**
+o	**a) Spoofing**  
+
+    - Attackers can impersonate legitimate users (or systems) to gain unauthorized access. They could, for example, gain authentication credentials
+      and impersonate a consumer or researcher to access sensitive genomic data or employees to gain access to the platform (web or mobile). 
+    - Techniques: credential stuffing, phishing, social engineering
+    - Expected value: Medium-High. The probability of credentials being stolen or guessed can be high, but data leaks are likely to be more limited
+      in scope compared to other risk categories. The impact on financial losses can therefore be relatively limited depending on the data being exposed.
+
+o	**b) Tampering**  
+
+    - An attacker modifies application code or data during transit or at rest, to cause harmful or unintended updates to the database. 
+      This can result in tampered customer reports or research data, causing inaccurate conclusions (e.g. health implications or recommendations) 
+      and potentially resulting in the loss of customer trust, industry legitimacy and reputation.
+    - Techniques: man-in-the-middle attacks, supply chain attacks
+    - Expected value: Moderately high. While the probability of the risk occurring depends on the security measures in place, modifying genetic 
+      data and reports could significantly impact credibility and customer trust, resulting in financial losses and legal consequences. 
+
+o	**c) Repudiation**  
+
+    - The ability of the attacker to manipulate logs and transactions to cover their actions.
+    - Expected value: Low-Medium: The probability of occurrence depends on logging and audit trail measures in place. Can hinder investigations 
+      and result in legal cost if actions cannot be traced, but the impact to the company is seemingly less severe than in other risk categories.
+
+o	**d) Information disclosure**  
+
+    - An attacker extracts and exposes sensitive data from the database to unauthorized parties. Sensitive data includes PII/user account 
+      information and genetic data. This can result from poor access control or insufficient anonymization of data.
+    - Techniques: data breaches, ransomware attacks
+    - Expected value: High. While probability of the incident occurring depends on the security measures in place, the system is mainly concerned 
+      with handling highly sensitive personal data, which is stored and processed extensively at several “points”. Due to the sensitivity of the data, 
+      breaches would likely by highly damaging to the company’s reputation as well as result in sizable regulatory penalties/fines and loss of customers, 
+      directly reflected in the monetary value of the risk.
+
+o	**e) Denial of Service (DoS)**  
+
+    - An attacker disrupts the availability of the service/system by overwhelming it, affecting its availability and preventing legitimate users from accessing it.
+    - Techniques: DDoS attacks 
+    - Expected value: Medium: While disruptive and increasingly popular, depending on the security measures and responses in place, they can be rather 
+      short lived and not as financially damaging as the risks in other categories.
+
+o	**f) Elevation of privilege**  
+
+    - An attacker tampers with the system to grant themselves or other users elevated roles (e.g. admin role) with higher privileges than intended, 
+      resulting in access to modify normally restricted data. This can result in full access and control over sensitive data, modifications to genetic 
+      information, customer data or other transactional records.
+    - Techniques:
+    - Expected value: Moderately high. Likelihood depends on security measures in place and access control. However, results in extensive data and access
+      breaches, likely resulting in major loss of reputation, financial and legalistic consequences. 
+
 
 **Threat actors**
 
