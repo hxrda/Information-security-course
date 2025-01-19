@@ -157,7 +157,12 @@
         focused IT company. Later, after her experiences at Defcon, she launched her career officially as a social engineer consultant.
         - Official hacking/ social engineering activities: Around the same time as establishing her IT company, she also learned about Defcon which is the largest annual 
         hacking conference hosted in Las Vegas. She discovered that her accumulated skills all came together under the umbrella of social engineering. At first Alethe was     
-        focused on observing other SE hackers and contestants, particularly on the manipulation and coercion side of SE. Observing other social engineers made her realize her   calling in the field, leading her to take part (and even win) in the SE contests, such as capture the flag competition. The competition mentioned involves capturing       “flags” which are publicly available information regarding a company, its employees, and company-wide technology in use (such as VPN providers, availability of on-site            wi-fi, ssid or name of wi-fi, type and version of browser, pdf viewer, model of laptop or computer issued to employees etc.). This information can be found from        websites, review sites, job descriptions, social media in addition to more detailed snooping, such as Google dorking. The information is used for building rapport,   impersonation and other manipulative purposes with the target. 
+        focused on observing other SE hackers and contestants, particularly on the manipulation and coercion side of SE. Observing other social engineers made her realize her
+        calling in the field, leading her to take part (and even win) in the SE contests, such as capture the flag competition. The competition mentioned involves capturing
+        “flags” which are publicly available information regarding a company, its employees, and company-wide technology in use (such as VPN providers, availability of on-site
+        wi-fi, ssid or name of wi-fi, type and version of browser, pdf viewer, model of laptop or computer issued to employees etc.). This information can be found from
+        websites, review sites, job descriptions, social media in addition to more detailed snooping, such as Google dorking. The information is used for building rapport,
+        impersonation and other manipulative purposes with the target. 
     - Other notes about SE
         - Alethe believes that the skills required for SE also make her a better business owner, communicator, employee, parent and spouse.
 
