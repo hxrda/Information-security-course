@@ -213,13 +213,22 @@
 
 ### **Company description**
 
-    -HeliX is a personal/consumer genomics and biotechnology company based in Finland. The company provides direct-to-consumer DNA testing to generate reports relating toa         customer’s ancestry and genetic predispositions to health -related topics.  The customers provide a saliva sample in exchange for a personalized report and choose whether      they want their data kept strictly private or be used anonymized in scientific research. Focusing on security and privacy, HeliX states that customer genetic data is          protected and used ethically.
+    -HeliX is a personal/consumer genomics and biotechnology company based in Finland. The company provides direct-to-consumer DNA testing to generate reports relating to
+    a customer’s ancestry and genetic predispositions to health -related topics.  The customers provide a saliva sample in exchange for a personalized report and choose
+    whether they want their data kept strictly private or be used anonymized in scientific research. Focusing on security and privacy, HeliX states that customer genetic
+    data is protected and used ethically.
 
 ### 1. What are we working on?
 
+### 2. What can go wrong?
+
+### 3. What are we going to do about it?
+
+### 4. Did we do good enough job?
+
 
 •	<ins>**References**</ins>    
-- https://terokarvinen.com/information-security/#h1-should-tero-wear-a-helmet
+- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/#h1-should-tero-wear-a-helmet
 - Cyberthreats to Biotechnology 2021 PDF by HHS 
 - https://www.researchgate.net/figure/Ethical-aspects-of-the-23andMe-model-and-connections-with-Google-Information-flows_fig3_299521348
 - https://threat-modeling.com/threat-modeling-the-23andme-data-breach/
