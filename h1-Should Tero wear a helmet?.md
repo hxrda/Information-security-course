@@ -5,6 +5,7 @@
 ### 1.1 Threat modelling manifesto
 
 •	**Definition of thread modelling**  
+
     - Thread modelling is a process that models and analyses representations of systems to identify and address potential security and privacy concerns associated with them.  
     
 •	**Threat modelling process**  
@@ -40,8 +41,8 @@
         C) Patterns to avoid (anti-patterns)  
             - Hero threat modeler, Admiration of the problem, Overfocus on details, Single perfect representation    
             
-•	**References**
-    Braiterman et al 2020: [Threat modeling manifesto](https://www.threatmodelingmanifesto.org/)  
+•	**References**  
+    Braiterman et al 2020: Threat modeling manifesto at https://www.threatmodelingmanifesto.org/
 
 
 ## A) Security Hygiene
