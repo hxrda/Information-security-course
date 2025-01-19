@@ -142,18 +142,34 @@
 
 ### 1.4 Infosec scene - Darknet Diaries Podcast: Episode 107 on social engineering 
 
-    - The interviewee, Alethe, is a social engineer who professionally attempts to manipulate and trick people to do what she wants them to do, such as provide their passwords or key information which allows her access to confidential data, break into systems or locations. She, and the company she works for (Critical Insight), are looking toward expanding their social engineering activities to include more vishing, phishing and social engineering physicals onsite in the future. Their current clientele includes organizations providing critical infrastructure as well as DoD contractors
+    - The interviewee, Alethe, is a social engineer who professionally attempts to manipulate and trick people to do what she wants them to do, such as   
+    provide their passwords or key information which allows her access to confidential data, break into systems or locations. She, and the company she works for  
+    (Critical Insight), are looking toward expanding their social engineering activities to include more vishing, phishing and social engineering physicals onsite in the       
+    future. Their current clientele includes organizations providing critical infrastructure as well as DoD contractors  
       
     - Her career choice is based on:
-        - Her innate ability to read people, a skill she acquired and honed already in her early childhood. As a young child, she learned how to be sneaky, get away with lies and manipulate adults into getting what she wanted. Any mistakes she made, helped her improve the relevant skill early on. 
+        - Her innate ability to read people, a skill she acquired and honed already in her early childhood. As a young child, she learned how to be sneaky,  
+        get away with lies and manipulate adults into getting what she wanted. Any mistakes she made, helped her improve the relevant skill early on. 
         - Academics: Later, she also developed an obsession with computer science, tech and coding, which contributed to her choice of career path.
-        - Job history: Although she worked at minimum wage jobs during a rough patch in her life, e.g. working in retail taught her new skills on how to deal with customers and improved her social and communication skills. Additionally, another job at a title company allowed her to develop research and OSINT (open source intelligence gathering) skills. A string of other jobs allowed her to further hone her knowledge and capabilities before setting up her own security focused IT company. Later, after her experiences at Defcon, she launched her career officially as a social engineer consultant.
-        - Official hacking/ social engineering activities: Around the same time as establishing her IT company, she also learned about Defcon which is the largest annual hacking conference hosted in Las Vegas. She discovered that her accumulated skills all came together under the umbrella of social engineering. At first Alethe was focused on observing other SE hackers and contestants, particularly on the manipulation and coercion side of SE. Observing other social engineers made her realize her calling in the field, leading her to take part (and even win) in the SE contests, such as capture the flag competition. The competition mentioned involves capturing “flags” which are publicly available information regarding a company, its employees, and company-wide technology in use (such as VPN providers, availability of on-site wi-fi, ssid or name of wi-fi, type and version of browser, pdf viewer, model of laptop or computer issued to employees etc.). This information can be found from websites, review sites, job descriptions, social media in addition to more detailed snooping, such as Google dorking. The information is used for building rapport, impersonation and other manipulative purposes with the target. 
+        - Job history: Although she worked at minimum wage jobs during a rough patch in her life, e.g. working in retail taught her new skills on how to deal with  
+        customers and improved her social and communication skills. Additionally, another job at a title company allowed her to develop research and OSINT  
+        (open source intelligence gathering) skills. A string of other jobs allowed her to further hone her knowledge and capabilities before setting up her own security      
+        focused IT company. Later, after her experiences at Defcon, she launched her career officially as a social engineer consultant.
+        - Official hacking/ social engineering activities: Around the same time as establishing her IT company, she also learned about Defcon which is the largest annual          hacking conference hosted in Las Vegas. She discovered that her accumulated skills all came together under the umbrella of social engineering. At first Alethe was focused      on observing other SE hackers and contestants, particularly on the manipulation and coercion side of SE. Observing other social engineers made her realize her calling in      the field, leading her to take part (and even win) in the SE contests, such as capture the flag competition. The competition mentioned involves capturing “flags” which are      publicly available information regarding a company, its employees, and company-wide technology in use (such as VPN providers, availability of on-site wi-fi, ssid or name
+        of wi-fi, type and version of browser, pdf viewer, model of laptop or computer issued to employees etc.). This information can be found from websites, review sites,        job descriptions, social media in addition to more detailed snooping, such as Google dorking. The information is used for building rapport, impersonation and other m          manipulative purposes with the target. 
     - Other notes about SE
         - Alethe believes that the skills required for SE also make her a better business owner, communicator, employee, parent and spouse.
 
 •	<ins>**References**</ins>     
     https://darknetdiaries.com/episode/107/ 
+
+### 1.5 Additional questions to consider:
+
+- How to translate the values and principles of the manifesto into concrete step-by-step methodologies that serve individual needs? What are some examples of suitable and successfully field-tested techniques and approaches?
+- How to continuously and properly refine the modelling process throughout the development iterations and system’s lifecycle?
+- How to properly balance needs for threat modelling & fixing design issues vs. business goals, needs and cost or time constraints?
+- What is the sufficient number of viewpoints to be included in each case?
+- What are some good sources for learning about SE & how to practice those skills (legally)?
 
 ## A) Security Hygiene
 
