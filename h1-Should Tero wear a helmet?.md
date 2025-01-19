@@ -213,12 +213,53 @@
 
 ### **Company description**
 
-    -HeliX is a personal/consumer genomics and biotechnology company based in Finland. The company provides direct-to-consumer DNA testing to generate reports relating to
-    a customer’s ancestry and genetic predispositions to health -related topics.  The customers provide a saliva sample in exchange for a personalized report and choose
-    whether they want their data kept strictly private or be used anonymized in scientific research. Focusing on security and privacy, HeliX states that customer genetic
-    data is protected and used ethically.
+    -HeliX is a personal/consumer genomics and biotechnology company based in USA. The company provides direct-to-consumer DNA testing
+    to generate reports relating to a customer’s ancestry and genetic predispositions to health -related topics.  The customers provide a saliva
+    sample in exchange for a personalized report and choose whether they want their data kept strictly private or be used anonymized in scientific research. 
+    Focusing on security and privacy, HeliX states that customer genetic data is protected and used ethically.
 
 ### 1. What are we working on?
+
+o	Key assets (most important ones):
+
+    - Data/ Information:
+        - Customer genetic data (raw genetic sequence data, DNA test results)
+        - Customer accounts, authentication data & personally identifiable information – PII (credentials, names, addresses, contact details, payment data)
+        - Genetic reports generated for consumers & anonymized datasets sold to partnered research institutions or biotech/pharma companies. 
+    - Infrastructure for data acquisition & data processing
+        - Customer- and business-facing platforms & APIs for data acquisition, access, reports and purchases
+        - Computing resources, data pipelines, data storage and database
+        - Physical facilities for biobanking (biosample storage & processing)
+    - Reputation
+        - Customer trust & public perception (data security, privacy, ethics)
+        - Brand credibility in the industry - data validity
+        - Regulatory & legal compliance nationally and internationally (GDPR, HIPAA, FDA & other relevant regulators)
+    - Financial
+        - Revenue from product sales
+        - Licensing & data-sharing agreements with partnered companies
+        - Investments and funding
+    - Business continuity
+
+o	How does security support business:
+
+    - Handling genetic and customer personal data securely builds customer trust and helps increase customer base retention
+    - Data anonymization allows to sell/share data with partnered companies while complying with regulations to protect customer data privacy
+    - Legal and regulatory compliance prevent legal liabilities
+    - Implementing best security practices and controls prevent breaches targeting data and company reputation
+
+o	What must be done to serve/retain customers – Business continuity:
+
+    - Transparency – Clear terms of service on how customer data is used, transparency of payment methods and terms 
+    - Results validity – Providing accurate and high-quality reports or datasets, backed with proper scientific and medical techniques, 
+      tools and methods both to individual consumers and partnered companies
+    - Data control – Providing the customers the option to opt in or out of research and manage requests for data sharing or removal
+    - Data privacy and security ensurance – Ensuring customerbiosamples and data is kept private, securely stored, processed, and proactively 
+      protected against security breaches
+    - All of the abovementioned points contribute to company reputation both among individual consumers and partnered companies/ institutions (research, biotech/pharma…)
+
+o	Diagram of company systems:
+
+    -(x)
 
 ### 2. What can go wrong?
 
