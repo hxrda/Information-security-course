@@ -59,21 +59,21 @@
 
     - Follows a 4-question framework. Threat modelling should answer each of these high-level questions
         1. What are we working on?
-            •	Tools: Sketching, DFDs (Elements: external entities, processes, data flows, data stores, trust boundaries), Collaboration
-            •	Requires documentation of record
+            - Tools: Sketching, DFDs (Elements: external entities, processes, data flows, data stores, trust boundaries), Collaboration
+            - Requires documentation of record
         2. What can go wrong?
-            •	Tools: STRIDE (spoofing, tampering, repudiation, information disclosure, DoS, elevation of privileges), Kill chain
-            •	Threats should be recorded, tracked and treated as development items in the backlog of the design process
+            - Tools: STRIDE (spoofing, tampering, repudiation, information disclosure, DoS, elevation of privileges), Kill chain
+            - Threats should be recorded, tracked and treated as development items in the backlog of the design process
         3. What are we going to do about it?
-            •	Each threat needs an actionable response
-            •	Example responses: writing a feature, deploying a control, risk management
-            •	Risk management: 
-                o	applied to a subset of the discovered threats
-                o	used to quantify the probability and impact of the threat
-                o	helps in response planning
-                o	e.g. techniques: transferring, acceptance
+            - Each threat needs an actionable response
+            - Example responses: writing a feature, deploying a control, risk management
+            - Risk management: 
+                - applied to a subset of the discovered threats
+                - used to quantify the probability and impact of the threat
+                - helps in response planning
+                - e.g. techniques: transferring, acceptance
         4. Did we do a good job?
-            •	Assessing the results e.g. by evaluating whether the threat model can be recommended for use
+            - Assessing the results e.g. by evaluating whether the threat model can be recommended for use
     - Different models/structures/frameworks/approaches can be used to answer the questions in a more precise and consistent way
     
   •	<ins>**References**</ins>     
