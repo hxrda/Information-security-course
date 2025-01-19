@@ -179,5 +179,35 @@
 
 ## A) Security Hygiene
 
+•	**List of Basic Security Hygiene practices** 
+
+    - Educate and familiarize necessary parties with common attack vectors.
+    - Don’t give away personal data
+    - Protect sensitive data at rest and in transit
+    - Update software regularly
+    - Regularly evaluate & address vulnerabilities and threats (e.g. threat modelling)
+    - Implement active inventory/asset control management (IT resources & other enterprise assets, e.g. end-user, network or IoT devices and servers)
+    - Apply security configurations to both hardware and software
+    - Actively manage backups & data recovery
+    - Implement strong identity and access management – IAM. Manage and secure user accounts (strong passwords, 2FA/MFA, principle of least privilege, other access controls, password manager as a supportive tool etc.)
+    - Audit log management
+    - Be vigilant of suspicious links in various contexts, such as email scams (e.g. phishing attempts)
+    - Utilize effective security software and tools, such as anti-malware/virus software and endpoint security solutions across your devices and networks
+    - Implement active network monitoring and network security controls, such as firewalls, secure configurations of network devices
+    - Use secured VPN & secure access points when connecting to remote networks, such as your corporate’s network.
+    - Set up a separate secure network for business transactions or other tasks involving sensitive work data from the network connected to your home devices. 
+    - Conduct regular security/penetration testing to identify vulnerabilities
+    - Incorporate an incident response and recovery plan in case of an attack occurring to limit the scope of the attack and to minimize downtime
+
+
+•	<ins>**References**</ins>     
+- https://www.fortinet.com/blog/industry-trends/basic-cyber-hygiene-practices-that-go-a-long-way?utm_source=chatgpt.com 
+- https://www.avertium.com/blog/understanding-cybersecurity-best-practices?utm_source=chatgpt.com 
+- https://www.cisecurity.org/controls/v8-1 
+- https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html 
+
+
+    
+
 ## B) Threat model for imaginary company
 
