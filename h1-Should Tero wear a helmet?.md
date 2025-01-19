@@ -427,6 +427,6 @@ o	**f) Elevation of privilege**
 - https://www.cypressdatadefense.com/blog/data-tampering-prevention/
 - https://www.wallarm.com/what/what-is-an-information-disclosure-examples-and-prevention
 - https://www.upguard.com/blog/prevent-data-breaches#toc-1  
-- GPT prompts for brainstorming and ideation to be used as reference:
+- GPT prompts for brainstorming, ideation and reference:
 > “Utilizing the STRIDE threat modelling method, what risks could be involved in each threat category of the particular system in question"
 > “Utilizing the META framework, what risk mitigation strategies could be used for the particular system in question, taking into account the identified risks”
