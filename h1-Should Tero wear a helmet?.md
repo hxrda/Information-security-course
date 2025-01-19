@@ -22,8 +22,7 @@
     
 •	The threat modelling manifesto
     o	The manifesto serves as a conceptual guide for refining and producing more effective thread modelling methodologies, suited for individual needs. 
-    o	The manifesto is a set of ideas, and it is not tied to any specific methodology or framework nor does it provide concrete step-by-step/ how-to guides for thread 
-      modelling (cf. Agile principles)
+    o	The manifesto is a set of ideas, and it is not tied to any specific methodology or framework nor does it provide concrete step-by-step/ how-to guides for thread modelling (cf. Agile principles)
     o The manifesto defines a list of relative “values”, where items on the left are valued over items on the right:
         -Finding and fixing design issues over checkbox compliance
         -People and collaboration over processes, methodologies or tools
