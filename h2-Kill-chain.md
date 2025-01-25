@@ -121,14 +121,14 @@
     use of techniques to execute an attack.
     - Examples
         -	For Process injection technique:
-            > TrickBot trojan spyware for e.g. using Native API functions to inject code into legitimate processes such as wermgr.exe
-            > Wiarp trojan software to create backdoors which remote attackers can use to inject files into running processes
+                > TrickBot trojan spyware for e.g. using Native API functions to inject code into legitimate processes such as wermgr.exe
+                > Wiarp trojan software to create backdoors which remote attackers can use to inject files into running processes
         -	For Thread execution hijacking sub-technique
-            > Gazer backdoor to perform thread execution hijacking on a running thread of a remote process
-            > Waterbear malware for lateral movement, decrypting, triggering payloads, injecting shellcode into security 
-            software processes and hiding network behaviors. 
-            > Pikabot for creating a suspended instance of a legitimate process, allocate memory for malicious code and 
-            redirecting exeution flow to the malicious code once the thread is resumed.
+                > Gazer backdoor to perform thread execution hijacking on a running thread of a remote process
+                > Waterbear malware for lateral movement, decrypting, triggering payloads, injecting shellcode into security 
+                software processes and hiding network behaviors. 
+                > Pikabot for creating a suspended instance of a legitimate process, allocate memory for malicious code and 
+                redirecting exeution flow to the malicious code once the thread is resumed.
 
 
 •	<ins>**References**</ins>   
