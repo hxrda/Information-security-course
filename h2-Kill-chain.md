@@ -1,6 +1,6 @@
 # H1 Homework
 
-## X) Summaries
+## X) Summary
 
 •	**Key points** 
 
@@ -63,10 +63,73 @@
 
 ## A) MITRE ATT&CK 
 
-•	**The MITRE ATT&CK Framework** 
+•	**The MITRE ATT&CK Framework**  
+
+    - A universally accessible knowledge base of adversary tactics and techniques based on known attack patterns of cybercriminals/ threat actors. 
+    It is used for developing treat models and methodologies, detecting, preventing and defending against cybersecurity threats.
+    
+    - The framework categorizes cybercriminal tactics, techniques and procedures (TTPs) across each phase of the cyberattack lifecycle.
+    
+    - “ATT&CK” stands for Adversarial tactics, Techniques and Common knowledge
+
+
 •	**Tactics** 
+
+    - A tactic represents the reason, the “why”, behind an adversary action. I.e., it describes the underlying the objective/goal which 
+    the adversary is attempting to achieve by using a technique or sub-technique.
+    - Examples
+        - Resource development:
+            > Involves establishing resources to support attack operations, such as acquiring infrastructure, creating accounts, developing 
+            capabilities and malware before attacking. These resources are leveraged throughout the cyberattack chain/lifecycle. More specific 
+            implementation examples belong in the domain of techniques.
+        - Persistence:
+            > Involves maintaining access to a compromised system across restarts, credential changes or other disruptions that could cut off access. 
+            This involves techniques associated with replacing or hijacking legitimate code or introducing startup code.
+        - Lateral movement:
+            > Involves gaining the ability to move within the compromised network beyond the initial access point and the expansion of access to reach 
+            additional valuable assets/ resources within the system. The adversaries attempt to reach their objective via pivoting through multiple systems 
+            and/or accounts. This lateral movement might be accomplished by utilizing remote access tools or legitimate credentials in the network.
+        - Defense evasion:
+            > Involves avoiding detection throughout a compromise once inside a target system. It incorporates techniques for abusing trusted processes, 
+            hiding or masking malware, uninstalling or disabling security software and/or obscuring or encrypting data and scripts. 
+
+
 •	**Techniques & Sub-techniques** 
+
+    - A technique represents “how” an adversary achieves a specific tactic (tactical goal). 
+    - A sub-technique is a more granular/ specific variation of a technique.
+    - Examples
+        - T1055 - Process injection technique (Tactics category: Defense evasion, Privilege escalation)
+            > Injecting malicious code into legitimate or seemingly benign processes to execute/run code in the context and under the privileges 
+            of the other process. This is often done to evade security defenses by masking the malicious code under the legitimate process, for 
+            gaining access to the legitimate process’s memory, system or network resources and to elevate privileges.
+            > For example, injecting malware into common native built-in Windows processes (explorer.exe, cmd.exe) or other commonly used software 
+            such as browsers (chrome.exe), antiviruses (mcafee.exe), office tools (winword.exe) or utilities.
+        - T1055.003 – Thread execution hijacking sub-technique (Tactics category: Defense evasion, Privilege escalation)
+            > The attacker executes malicious code in the context of an already existing process on the target system to hide malware inside trusted 
+            programs/processes. Malicious code is injected into the pre-existing process and execution of one of the threads of that process is forcefully 
+            redirected to run the malicious code. The technique is similar to the process hollowing technique, but the latter involves creating a new process 
+            in a suspended state instead of using a pre-existing process on the target system.
+            > General attack lifecycle: 1.Process handle acquisition, 2.Thread suspension, 3.Memory allocation (for the malicious code), 
+            4. Writing shellcode (malicious payload), 5. Hijacking thread context, 6. Context manipulation (changing execution flow of the 
+            thread to the malicious code), 7. Thread resumption.
+
+
 •	**Procedures**
+
+    - A procedure is a specific implementation of a technique or sub-technique used by adversaries. They describe an exact, “in-the-wild”, 
+    use of techniques to execute an attack.
+    - Examples
+        -	For Process injection technique:
+            > TrickBot trojan spyware for e.g. using Native API functions to inject code into legitimate processes such as wermgr.exe
+            > Wiarp trojan software to create backdoors which remote attackers can use to inject files into running processes
+        -	For Thread execution hijacking sub-technique
+            > Gazer backdoor to perform thread execution hijacking on a running thread of a remote process
+            > Waterbear malware for lateral movement, decrypting, triggering payloads, injecting shellcode into security 
+            software processes and hiding network behaviors. 
+            > Pikabot for creating a suspended instance of a legitimate process, allocate memory for malicious code and 
+            redirecting exeution flow to the malicious code once the thread is resumed.
+
 
 •	<ins>**References**</ins>   
 - MITRE ATT&CK Matrix for Enterprise. https://attack.mitre.org/
@@ -78,4 +141,4 @@
 
 
 
-## A) Done
+## B) Done
