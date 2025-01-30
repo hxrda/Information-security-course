@@ -4,20 +4,20 @@
 
 ### Installing Debian on Virtualbox   
 
-•	Choosing the correct ISO image version ensures compatibility with the underlying system / physical hardware. Live version allows to boot Debian/Linux and test its compatibility with your system before installation. 
-•	Virtualbox is virtualization software that’s used to create and manage VMs – environments where  guest OS can be installed and run (Virtualbox.org, 2019). 
-•	For the VM, choosing a sufficient amount of RAM translates to better performance, though the RAM on the physical machine sets the upper limit. Storage/VHD, if dynamically allocated, uses only the disk space needed (vs. pre-allocating space). This saves space on the host system, even if a larger number of GBs are allocated for the VM. The ISO image is inserted as the virtual cdrom, from which to boot the VM.  
-•	Booting to live version allows to test (e.g. network, display, hardware) the Linux/Debian before installation. 
-•	When installing new OS on a real (non-virtual) computer with other pre-existing OS, backups (before installation) should be made to avoid data loss resulting from e.g., reformatting the disk, partition or setting overrides etc. The backups allow restoring the system, files and configurations in case of installation mistakes or failure. 
-•	When installing the Linux/Debian on the VM (which is empty), partitioning erases existing data on the disk for clean OS installation. Encryption isn’t necessary because the virtual environment is isolated, can be easily reset/recreated and it usually doesn’t store long-term data. Since the host system should be encrypted, the virtual machine, which is a file on the host system, should be also protected as a result. With the user account creation step, security hygiene guidelines should be followed to create a strong password. The account will have sudo (admin) privileges on the VM.
-•	After installation, updating and upgrading packages to the latest versions should be done for e.g. ensuring the compatibility of software components and security patches to fix vulnerabilities. A firewall should also be installed for network security.
-•	Similar to backups, taking snapshots of the VM at different points, allow quick restoration of the previous state in case something goes wrong with the current state.  
+- Choosing the correct ISO image version ensures compatibility with the underlying system / physical hardware. Live version allows to boot Debian/Linux and test its compatibility with your system before installation. 
+-	Virtualbox is virtualization software that’s used to create and manage VMs – environments where  guest OS can be installed and run (Virtualbox.org, 2019). 
+-	For the VM, choosing a sufficient amount of RAM translates to better performance, though the RAM on the physical machine sets the upper limit. Storage/VHD, if dynamically allocated, uses only the disk space needed (vs. pre-allocating space). This saves space on the host system, even if a larger number of GBs are allocated for the VM. The ISO image is inserted as the virtual cdrom, from which to boot the VM.  
+-	Booting to live version allows to test (e.g. network, display, hardware) the Linux/Debian before installation. 
+-	When installing new OS on a real (non-virtual) computer with other pre-existing OS, backups (before installation) should be made to avoid data loss resulting from e.g., reformatting the disk, partition or setting overrides etc. The backups allow restoring the system, files and configurations in case of installation mistakes or failure. 
+-	When installing the Linux/Debian on the VM (which is empty), partitioning erases existing data on the disk for clean OS installation. Encryption isn’t necessary because the virtual environment is isolated, can be easily reset/recreated and it usually doesn’t store long-term data. Since the host system should be encrypted, the virtual machine, which is a file on the host system, should be also protected as a result. With the user account creation step, security hygiene guidelines should be followed to create a strong password. The account will have sudo (admin) privileges on the VM.
+-	After installation, updating and upgrading packages to the latest versions should be done for e.g. ensuring the compatibility of software components and security patches to fix vulnerabilities. A firewall should also be installed for network security.
+-	Similar to backups, taking snapshots of the VM at different points, allow quick restoration of the previous state in case something goes wrong with the current state.  
  
 
 <ins>**References**</ins> 
-•	Karvinen 2021: Install Debian on Virtualbox - Updated 2024
-•	Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
-•	Virtualbox.org 2019 - Oracle VM VirtualBox at https://www.virtualbox.org/manual/ 
+-	Karvinen 2021: Install Debian on Virtualbox - Updated 2024
+-	Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
+-	Virtualbox.org 2019 - Oracle VM VirtualBox at https://www.virtualbox.org/manual/ 
 
 
 ### Command Line Basics Revisited  
@@ -66,9 +66,9 @@ Commands for package management & installations
 
 
 <ins>**References**</ins> 
-•	Karvinen 2020: Command Line Basics Revisited
-•	Karvinen 2021: Install Debian on Virtualbox - Updated 2024
-•	GeeksforGeeks. (2022) - Difference Between APT and DPKG in Ubuntu at https://www.geeksforgeeks.org/difference-between-apt-and-dpkg-in-ubuntu/ 
+-	Karvinen 2020: Command Line Basics Revisited
+-	Karvinen 2021: Install Debian on Virtualbox - Updated 2024
+-	GeeksforGeeks. (2022) - Difference Between APT and DPKG in Ubuntu at https://www.geeksforgeeks.org/difference-between-apt-and-dpkg-in-ubuntu/ 
 
 
 ## A) ....
