@@ -2,7 +2,7 @@
 
 ## X) Summaries
 
-### Installing Debian on Virtualbox 
+### Installing Debian on Virtualbox   
 
 •	Choosing the correct ISO image version ensures compatibility with the underlying system / physical hardware. Live version allows to boot Debian/Linux and test its compatibility with your system before installation. 
 •	Virtualbox is virtualization software that’s used to create and manage VMs – environments where  guest OS can be installed and run (Virtualbox.org, 2019). 
@@ -20,7 +20,7 @@
 •	Virtualbox.org 2019 - Oracle VM VirtualBox at https://www.virtualbox.org/manual/ 
 
 
-### Command Line Basics Revisited
+### Command Line Basics Revisited  
 
 The command line in Linux is useful for convenience, fast execution and automation.
 
