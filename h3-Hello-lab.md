@@ -2,7 +2,7 @@
 
 ## X) Summaries
 
-### Installing Debian on Virtualbox   
+### <ins>Installing Debian on Virtualbox</ins>      
 
 - Choosing the correct ISO image version ensures compatibility with the underlying system / physical hardware. Live version allows to boot Debian/Linux and test its compatibility with your system before installation. 
 -	Virtualbox is virtualization software that’s used to create and manage VMs – environments where  guest OS can be installed and run (Virtualbox.org, 2019). 
@@ -13,6 +13,9 @@
 -	After installation, updating and upgrading packages to the latest versions should be done for e.g. ensuring the compatibility of software components and security patches to fix vulnerabilities. A firewall should also be installed for network security.
 -	Similar to backups, taking snapshots of the VM at different points, allow quick restoration of the previous state in case something goes wrong with the current state.  
  
+Questions / Insights:  
+- How do security measures differ on VM vs. real computers?
+- How to safely install Linux on a real computer with other pre-existing OS?
 
 <ins>**References**</ins> 
 -	Karvinen 2021: Install Debian on Virtualbox - Updated 2024
@@ -20,7 +23,9 @@
 -	Virtualbox.org 2019 - Oracle VM VirtualBox at https://www.virtualbox.org/manual/ 
 
 
-### Command Line Basics Revisited  
+
+
+### <ins>Command Line Basics Revisited</ins>     
 
 The command line in Linux is useful for convenience, fast execution and automation.
 
@@ -63,6 +68,11 @@ Commands for package management & installations
 -	`sudo apt-get install` install a software/package
 -	`apt-cache search` search for a package with keyword
 -	`sudo apt-get purge` remove a package & its settings
+
+
+Questions / Insights:  
+- Why has the command line remained relevant and unchanged for so long?
+- Could you automate linux security with scripts?
 
 
 <ins>**References**</ins> 
