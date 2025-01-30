@@ -18,7 +18,7 @@ Questions / Insights:
 - How to safely install Linux on a real computer with other pre-existing OS?
 
 <ins>**References**</ins> 
--	Karvinen 2021: Install Debian on Virtualbox - Updated 2024
+-	Karvinen 2021: Install Debian on Virtualbox - Updated 2024 at https://terokarvinen.com/2021/install-debian-on-virtualbox/
 -	Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
 -	Virtualbox.org 2019 - Oracle VM VirtualBox at https://www.virtualbox.org/manual/ 
 
@@ -76,8 +76,8 @@ Questions / Insights:
 
 
 <ins>**References**</ins> 
--	Karvinen 2020: Command Line Basics Revisited
--	Karvinen 2021: Install Debian on Virtualbox - Updated 2024
+-	Karvinen 2020: Command Line Basics Revisited at https://terokarvinen.com/2020/command-line-basics-revisited/#comments
+-	Karvinen 2021: Install Debian on Virtualbox - Updated 2024 at https://terokarvinen.com/2021/install-debian-on-virtualbox/
 -	GeeksforGeeks. (2022) - Difference Between APT and DPKG in Ubuntu at https://www.geeksforgeeks.org/difference-between-apt-and-dpkg-in-ubuntu/ 
 
 
