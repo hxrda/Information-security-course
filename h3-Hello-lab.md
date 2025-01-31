@@ -81,4 +81,38 @@ Questions / Insights:
 -	GeeksforGeeks. (2022) - Difference Between APT and DPKG in Ubuntu at https://www.geeksforgeeks.org/difference-between-apt-and-dpkg-in-ubuntu/ 
 
 
-## A) ....
+## A) Can't fish
+
+- The ping command is commonly used for testing network connectivity. It uses ICMP to send packets to a specified IP address (`ping <ip-address>`), and the received output is used for troubleshooting potential connection issues (Globalping, 2023).
+- Before disabling the network, connectivity was tested with pinging Cloudflare’s DNS server (1.1.1.1).  The test was successful.
+- Output for successful test - network connection on(Globalping, 2023):
+> First line: Destination IP address & size of sent packets
+> Ping responses received from the target:
+> 64 bytes - confirms that a 64-byte packet was received as a response from the target
+> icmp_seq – a sequence number of a packet and a counter that increases with each packet sent. Used for tracking packet order or packet loss
+> ttl (time-to-live)  - the number of hops (routers) the packet traveled through to reach the destination.
+> time – the round-trip time (RTT) describes the duration it took for the packet to travel from to the destination and back
+> Ping statistics summary at the end indicates the percentage of packets lost and min/avg/max/mean deviation values for the RTT. The values indicate the speed and stability of the network connection and potential issues.
+
+- Afterwards, the network was disabled from settings (machine -> settings -> network -> uncheck  “enable network adapter”). The machine had to be shut off for making the change.
+- Output for unsuccessful network test (network connection off):
+> Network is unreachable, which shows that the ping query was unable to be sent to the destination. (E.g., timeout message would indicate that packets were sent but no response was received (Garn, 2021))
+
+- [a1,a2]
+
+
+<ins>**References**</ins> 
+
+- Globalping (2023). How to Read Ping Results: A Beginner’s Guide. [online] Globalping Blog. Available at: https://blog.globalping.io/how-to-read-ping-results-a-beginners-guide/ 
+- Garn, D. (2021). Ping command basics for testing and troubleshooting. [online] Available at: https://www.redhat.com/en/blog/ping-usage-basics.
+- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/ 
+
+
+## B)
+<ins>**References**</ins> 
+
+## C)
+<ins>**References**</ins> 
+
+## D) ....
+<ins>**References**</ins> 
