@@ -93,7 +93,8 @@ Questions / Insights:
    - icmp_seq – a sequence number of a packet and a counter that increases with each packet sent. Used for tracking packet order or packet loss
    - ttl (time-to-live)  - the number of hops (routers) the packet traveled through to reach the destination.
    - time – the round-trip time (RTT) describes the duration it took for the packet to travel from to the destination and back
-   - Ping statistics summary at the end indicates the percentage of packets lost and min/avg/max/mean deviation values for the RTT. The values indicate the speed and stability of the network connection and potential issues.
+   - 
+- Ping statistics summary at the end indicates the percentage of packets lost and min/avg/max/mean deviation values for the RTT. The values indicate the speed and stability of the network connection and potential issues.
 
 - Afterwards, the network was disabled from settings (machine -> settings -> network -> uncheck  “enable network adapter”). The machine had to be shut off for making the change.
 - Output for unsuccessful network test (network connection off):
@@ -110,8 +111,29 @@ Questions / Insights:
 - Karvinen 2025 - Information security at https://terokarvinen.com/information-security/ 
 
 
-## B)
-<ins>**References**</ins> 
+## B) Local only - Port scanning
+
+-	Nmap (network mapper) is an open-source Linux command line tool for network discovery and security auditing. The tool uses IP packets to provide real time information of a network: hosts available on a network, services offered by the host (applications and versions), host OSs, types of firewalls or packet filters in use and number of ports among other characteristics. Nmap can be used e.g. to identify network vulnerabilities (Dancuk, 2024; GeeksforGeeks, 2020; Marijan, 2024)
+-	The nmap utility was installed with the command `sudo apt install nmap -y. To check the version and that the installation was successful `nmap –version` (version 7.93 was installed) (Marijan, 2024).
+-	After disconnecting from the network, the local computer (localhost) was port scanned with the command: `sudo nmap -A localhost`. The command port scans 1000 most common TCP ports. The `-A` option enables comprehensive scan features, such as  OS detection, version detection, script scanning, and traceroute (Marijan, 2024).
+  
+-	The output
+  - First three lines show the nmap version, confirm that the machine scanned was localhost, and that the machine is online. 
+  - Closed: “Not shown:996 closed ports” indicates that out of the 1000 ports scanned, 996 are closed. Closed in this context means that the ports are accessible, but no application is listening on the port (Marijan, 2024)..
+  - Open ports (Actively accepting TCP connections, UDP datagrams, or SCTP associations) ,3] ((Marijan, 2024): 
+    - `25/tcp  open  smtp  Exim smtpd 4.96` – The service running on port 25 is SMTP (Simple Mail Transfer Protocol), which is used for sending and receiving emails. The mail server software used is Exim (version 4.96) (Wikipedia, 2024).
+    - `631/tcp open  ipp  CUPS 2.4` - The service running on port 631 is CUPS, which is used for printer management and network printing using the IPP (internet printing protocol) (Wikipedia, 2020).
+    - Last lines provide information about the machine and the OS. 
+
+![nmap local](h3-images/b_1.jpg)
+
+<ins>**References**</ins>   
+- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
+- GeeksforGeeks. (2020). Nmap Command in Linux with Examples. Available at: https://www.geeksforgeeks.org/nmap-command-in-linux-with-examples/.
+- Marijan, B. (2024). How to Install & Use NMAP Security Scanner on Linux. Knowledge Base by phoenixNAP. Available at: https://phoenixnap.com/kb/how-to-install-use-nmap-scanning-linux.
+- Dancuk, M. (2024). How to Use Nmap to Scan for Open Ports {Updated Tutorial 2019}. Knowledge Base by phoenixNAP. Available at: https://phoenixnap.com/kb/nmap-scan-open-ports.
+- Wikipedia (2024). Exim. Available at: https://en.wikipedia.org/wiki/Exim
+- Wikipedia. (2020). CUPS. Available at: https://en.wikipedia.org/wiki/CUPS
 
 ## C)
 <ins>**References**</ins> 
