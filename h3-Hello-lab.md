@@ -135,8 +135,22 @@ Questions / Insights:
 - Wikipedia (2024). Exim. Available at: https://en.wikipedia.org/wiki/Exim
 - Wikipedia. (2020). CUPS. Available at: https://en.wikipedia.org/wiki/CUPS
 
-## C)
+## C) Daemon scan
+
+-	First, the package list was updated for latest versions with `sudo apt-get update`
+-	Next the Apache2 web server was installed with `sudo apt-get -y install apache2`
+-	To start the daemon/Apache web server: `sudo systemctl start apache2`, to check that the status of the process: `sudo systemctl status apache2` (Sharma, 2024)‌. Output was active (running), which means that it is working.
+-	Next network was again, before running the nmap scan again: `sudo nmap -A localhost`
+  
+-	Output:
+  - The output seems almost identical to our previous scan. The only difference is that now port 80 is also open with Apache HTTP web server (ver 2.5.62) running on a Debian system: `80/tcp  open  http   Apache httpd 2.4.62 ((Debian))`. Port 80 is for HTTP (Dancuk, 2024).
+
+![nmap local](h3-images/c_1.jpg)
+
 <ins>**References**</ins> 
+-	Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
+- Dancuk, M. (2024). How to Use Nmap to Scan for Open Ports {Updated Tutorial 2019}. Knowledge Base by phoenixNAP. Available at: https://phoenixnap.com/kb/nmap-scan-open-ports.
+- Sharma, S (2024). Use Systemctl Status Command to Check Service Status. [online] Available at: https://linuxhandbook.com/systemctl-check-service-status/.
 
 ## D) ....
 <ins>**References**</ins> 
