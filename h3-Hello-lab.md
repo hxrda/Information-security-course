@@ -120,12 +120,12 @@ Questions / Insights:
   
 -	The output:
   
-   - First three lines show the nmap version, confirm that the machine scanned was localhost, and that the machine is online. 
-   - Closed: “Not shown:996 closed ports” indicates that out of the 1000 ports scanned, 996 are closed. Closed in this context means that the ports are accessible, but no application is listening on the port (Marijan, 2024)..
-   - Open ports (Actively accepting TCP connections, UDP datagrams, or SCTP associations) ,3] ((Marijan, 2024): 
-      - `25/tcp  open  smtp  Exim smtpd 4.96` – The service running on port 25 is SMTP (Simple Mail Transfer Protocol), which is used for sending and receiving emails. The mail server software used is Exim (version 4.96) (Wikipedia, 2024).
-      - `631/tcp open  ipp  CUPS 2.4` - The service running on port 631 is CUPS, which is used for printer management and network printing using the IPP (internet printing protocol) (Wikipedia, 2020).
-      - Last lines provide information about the machine and the OS. 
+    - First three lines show the nmap version, confirm that the machine scanned was localhost, and that the machine is online. 
+    - Closed: “Not shown:996 closed ports” indicates that out of the 1000 ports scanned, 996 are closed. Closed in this context means that the ports are accessible, but no application is listening on the port (Marijan, 2024)..
+    - Open ports (Actively accepting TCP connections, UDP datagrams, or SCTP associations) ,3] ((Marijan, 2024): 
+        - `25/tcp  open  smtp  Exim smtpd 4.96` – The service running on port 25 is SMTP (Simple Mail Transfer Protocol), which is used for sending and receiving emails. The mail server software used is Exim (version 4.96) (Wikipedia, 2024).
+        - `631/tcp open  ipp  CUPS 2.4` - The service running on port 631 is CUPS, which is used for printer management and network printing using the IPP (internet printing protocol) (Wikipedia, 2020).
+        - Last lines provide information about the machine and the OS. 
 
 ![nmap local](h3-images/b_1.jpg)
 
@@ -146,7 +146,7 @@ Questions / Insights:
   
 -	Output:
   
-   - The output seems almost identical to our previous scan. The only difference is that now port 80 is also open with Apache HTTP web server (ver 2.5.62) running on a Debian system: `80/tcp  open  http   Apache httpd 2.4.62 ((Debian))`. Port 80 is for HTTP (Dancuk, 2024).
+    - The output seems almost identical to our previous scan. The only difference is that now port 80 is also open with Apache HTTP web server (ver 2.5.62) running on a Debian system: `80/tcp  open  http   Apache httpd 2.4.62 ((Debian))`. Port 80 is for HTTP (Dancuk, 2024).
 
 ![nmap local](h3-images/c_1.jpg)
 
