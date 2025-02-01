@@ -175,6 +175,7 @@ Questions / Insights:
   - `ls -a` - list the contents of the current directory
   - `cat readme` - show the contents of the file
   - Password shown is “ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If”
+  - 
 - Exit the SSH connection: `exit`
 - SSH to next level with the new password
   - `ssh bandit1@bandit.labs.overthewire.org -p 2220`
