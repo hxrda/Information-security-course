@@ -155,5 +155,38 @@ Questions / Insights:
 - Dancuk, M. (2024). How to Use Nmap to Scan for Open Ports {Updated Tutorial 2019}. Knowledge Base by phoenixNAP. Available at: https://phoenixnap.com/kb/nmap-scan-open-ports.
 - Sharma, S (2024). Use Systemctl Status Command to Check Service Status. [online] Available at: https://linuxhandbook.com/systemctl-check-service-status/.
 
-## D) ....
+## D) Bandit oh-five  - Over The Wire: Bandit (levels 0-4)
+
+<ins>**Level 0**</ins>  
+- From the terminal on the Debian VM, establish an SSH connection to the Bandit server
+- First, ssh server and client services had to be installed (Kaplarevic, 2019):
+  - `sudo apt-get update`
+  - SSH server: `sudo apt-get install openssh-server`, ` sudo systemctl status ssh`  -> active(running)
+  - SSH client: `sudo apt-get install openssh-client`
+- Syntax for establishing SSH connection to the destination: `ssh user@hostname -p <port>`
+- Steps: 
+           a) `ssh bandit0@bandit.labs.overthewire.org -p 2220`
+           b) Enter password: `bandit 0`
+
+![nmap local](h3-images/d0.jpg)
+
+<ins>**Level 0 -> 1**</ins> 
+![nmap local](h3-images/d_0-1.jpg)
+
+<ins>**Level 1 -> 2**</ins> 
+![nmap local](h3-images/d_1-2.jpg)
+
+<ins>**Level 2 -> 3**</ins> 
+![nmap local](h3-images/d_2-3.jpg)
+
+<ins>**Level 3 -> 4**</ins> 
+![nmap local](h3-images/d_3-4-1.jpg)
+![nmap local](h3-images/d_4-1.jpg)
+![nmap local](h3-images/d_4-2.jpg)
+
+
 <ins>**References**</ins> 
+- man pages
+- overthewire.org (2024). OverTheWire: Bandit. Available at: https://overthewire.org/wargames/bandit/
+- Kaplarevic, V. (2024). How to Enable SSH on Debian 12. Available at: https://phoenixnap.com/kb/how-to-enable-ssh-on-debian.
+- Alfran (2017). How to open a ‘-’ dashed filename using terminal?  Stack Overflow. Available at: https://stackoverflow.com/questions/42187323/how-to-open-a-dashed-filename-using-terminal.
