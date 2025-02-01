@@ -168,18 +168,58 @@ Questions / Insights:
   - `ssh bandit0@bandit.labs.overthewire.org -p 2220`
   - Enter password: `bandit 0`
 
-![nmap local](h3-images/d0.jpg)
 
-<ins>**Level 0 -> 1**</ins> 
+<ins>**Level 0 -> 1**</ins>   
+
+-To find the password stored in the “readme” file inside the home directory:
+  - `ls -a` - list the contents of the current directory
+  - `cat readme` - show the contents of the file
+  - Password shown is “ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If”
+- Exit the SSH connection: `exit`
+- SSH to next level with the new password
+  - `ssh bandit1@bandit.labs.overthewire.org -p 2220`
+  - Enter password: ` ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If`
+
+
 ![nmap local](h3-images/d_0-1.jpg)
 
-<ins>**Level 1 -> 2**</ins> 
+<ins>**Level 1 -> 2**</ins>  
+
+-To find the password stored in the “-“ file inside the home directory:
+  - `ls -a`
+  - `cat ./- ` to access the file with a dash for a name. “-“ is interpreted as a special argument instead of a file name, so you have to explicitly refer to the current directory with “./” so that the dash is understood to be a file (Alfran, 2017).
+  - Password shown is “263JGJPfgU6LtdEvgfWU1XP5yac29mFx”
+-Exit SSH connection: `exit`
+- SSH to next level with the new password
+  - `ssh bandit2@bandit.labs.overthewire.org -p 2220`
+  - Enter password: `263JGJPfgU6LtdEvgfWU1XP5yac29mFx `
+
 ![nmap local](h3-images/d_1-2.jpg)
 
 <ins>**Level 2 -> 3**</ins> 
+
+-To find the password stored in the “spaces in this file name“ file inside the home directory:
+  - `ls -a`
+  - `cat "spaces in this filename"`(or`cat spaces\ in\ this\ filename` to handle filenames with spaces. Filenames with spaces are treated as separate arguments rather than just one argument. This can be resolved by wrapping the entire name in quotation marks or using \ before each space (Prakash, 2024).
+  - Password shown is “MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx”
+-Exit SSH connection: `exit`
+- SSH to next level with the new password
+  - `ssh bandit3@bandit.labs.overthewire.org -p 2220`
+  - Enter password: `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx`
+
 ![nmap local](h3-images/d_2-3.jpg)
 
-<ins>**Level 3 -> 4**</ins> 
+<ins>**Level 3 -> 4**</ins>   
+
+-To find the password stored in the hidden file inside the “inhere” directory:
+  - `ls -a`, `cd inhere`, `ls -la` (to list all files, including hidden ones)
+  - `cat ...Hiding-From-You`
+  - Password shown is “2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ”
+-Exit SSH connection: `exit`
+- SSH to next level with the new password
+  - `ssh bandit4@bandit.labs.overthewire.org -p 2220`
+  - Enter password: `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ`
+
 ![nmap local](h3-images/d_3-4-1.jpg)
 ![nmap local](h3-images/d_4-1.jpg)
 ![nmap local](h3-images/d_4-2.jpg)
