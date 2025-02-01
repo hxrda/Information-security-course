@@ -186,7 +186,7 @@ Questions / Insights:
 
 <ins>**Level 1 -> 2**</ins>  
 
--To find the password stored in the “-“ file inside the home directory:
+- To find the password stored in the “-“ file inside the home directory:
   - `ls -a`
   - `cat ./- ` to access the file with a dash for a name. “-“ is interpreted as a special argument instead of a file name, so you have to explicitly refer to the current directory with “./” so that the dash is understood to be a file (Alfran, 2017).
   - Password shown is “263JGJPfgU6LtdEvgfWU1XP5yac29mFx”
@@ -199,7 +199,7 @@ Questions / Insights:
 
 <ins>**Level 2 -> 3**</ins> 
 
--To find the password stored in the “spaces in this file name“ file inside the home directory:
+- To find the password stored in the “spaces in this file name“ file inside the home directory:
   - `ls -a`
   - `cat "spaces in this filename"`(or`cat spaces\ in\ this\ filename` to handle filenames with spaces. Filenames with spaces are treated as separate arguments rather than just one argument. This can be resolved by wrapping the entire name in quotation marks or using \ before each space (Prakash, 2024).
   - Password shown is “MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx”  
@@ -212,7 +212,7 @@ Questions / Insights:
 
 <ins>**Level 3 -> 4**</ins>   
 
--To find the password stored in the hidden file inside the “inhere” directory:
+- To find the password stored in the hidden file inside the “inhere” directory:
   - `ls -a`, `cd inhere`, `ls -la` (to list all files, including hidden ones)
   - `cat ...Hiding-From-You`
   - Password shown is “2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ”
