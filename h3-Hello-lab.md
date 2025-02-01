@@ -164,9 +164,9 @@ Questions / Insights:
   - SSH server: `sudo apt-get install openssh-server`, ` sudo systemctl status ssh`  -> active(running)
   - SSH client: `sudo apt-get install openssh-client`
 - Syntax for establishing SSH connection to the destination: `ssh user@hostname -p <port>`
-- Steps: 
-           a) `ssh bandit0@bandit.labs.overthewire.org -p 2220`
-           b) Enter password: `bandit 0`
+- Steps:   
+  - `ssh bandit0@bandit.labs.overthewire.org -p 2220`
+  - Enter password: `bandit 0`
 
 ![nmap local](h3-images/d0.jpg)
 
