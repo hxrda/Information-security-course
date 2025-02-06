@@ -108,7 +108,7 @@
 - Install wget first:  
    -`sudo apt-get update && sudo apt-get install wget -y`  
    -`wget –version`  (GNU Wget 1.21.3) Verify installation   
-- Note, port change did  not work with the lates version, so the version shown in the course materials was used instead  
+- Note, port change did  not work with the latest version (2023.8), so the version shown in the course materials (2023.4) was used instead  
    -` wget https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar` (Ver  2023.4)   
    -(`wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar`) https://github.com/WebGoat/WebGoat/releases)
   ![java_install](h4-images/4_a3.jpg)  
