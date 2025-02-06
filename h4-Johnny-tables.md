@@ -72,11 +72,11 @@
 - How to ensure comprehensive security if/when updates are incompatible with some of the application’s components?
 - How do all of the injection methods differ from each other? Are some of them more effective or harmful than others?
 
-- ### <ins>References</ins> 
-  - A01:2021 - Broken Access Control at https://owasp.org/Top10/A01_2021-Broken_Access_Control/ 
-  - A05:2021 - Security Misconfiguration at https://owasp.org/Top10/A05_2021-Security_Misconfiguration/ 
-  - A06:2021 - Vulnerable and Outdated Components at https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/ 
-  - A03:2021 – Injection at https://owasp.org/Top10/A03_2021-Injection/ 
+<ins>References</ins> 
+- A01:2021 - Broken Access Control at https://owasp.org/Top10/A01_2021-Broken_Access_Control/ 
+- A05:2021 - Security Misconfiguration at https://owasp.org/Top10/A05_2021-Security_Misconfiguration/ 
+- A06:2021 - Vulnerable and Outdated Components at https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/ 
+- A03:2021 – Injection at https://owasp.org/Top10/A03_2021-Injection/ 
 
 ### <ins>Web comic: Exploits of a mom</ins>  
 
