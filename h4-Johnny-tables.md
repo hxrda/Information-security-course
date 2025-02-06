@@ -108,7 +108,7 @@
 - Install wget first:  
    -`sudo apt-get update && sudo apt-get install wget -y`  
    -`wget –version`  (GNU Wget 1.21.3) Verify installation   
-- Note, port change did  not work with the lates version, so the version shown in the course materials was used instead
+- Note, port change did  not work with the lates version, so the version shown in the course materials was used instead  
    -` wget https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar`   (Ver  2023.4)   
    -(`wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar`)    
    (Newest WebGoat version (v2023.8) at: https://github.com/WebGoat/WebGoat/releases)
@@ -116,7 +116,8 @@
 
 <ins>Run WebGoat on another port (change ports)</ins>   
 - `java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.4.jar`  
-(-`java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.8.jar`) Newest version port change did not work and still ran on port 8080 instead.  
+(-`java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.8.jar`)  
+ Newest version port change did not work and still ran on port 8080 instead.  
  ![java_install](h4-images/4_a4.jpg)  
 
 - Navigate to URL: http://127.0.0.1:8888/WebGoat       
