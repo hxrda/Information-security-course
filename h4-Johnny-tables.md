@@ -100,8 +100,8 @@
 
 <ins>Install & enable Firewall (already done previously)</ins> 
 - `sudo apt-get -y install ufw`  
--`sudo ufw enable`  
--`sudo systemctl status ufw` (Verify installation)   
+- `sudo ufw enable`  
+- `sudo systemctl status ufw` (Verify installation)   
   ![java_install](h4-images/4_a2.jpg)
 
 <ins>Donwload WebGoat JAR</ins>   
@@ -110,7 +110,7 @@
    -`wget –version`  (GNU Wget 1.21.3) Verify installation   
 - Note, port change did  not work with the latest version (2023.8), so the version shown in the course materials (2023.4) was used instead  
    -` wget https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar` (Ver  2023.4)   
-   -(`wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar`) https://github.com/WebGoat/WebGoat/releases)
+   -(`wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar`) (https://github.com/WebGoat/WebGoat/releases)
   ![java_install](h4-images/4_a3.jpg)  
 
 <ins>Run WebGoat on another port (change ports)</ins>   
