@@ -96,31 +96,32 @@
 - `sudo apt-get update`
 - `sudo apt-get install openjdk-17-jre`
 - `java –version` (opendjk 17.04.14 2025-01-21) Verify installation
-- ![java_install](h4-images/4_a1.jpg)
+  ![java_install](h4-images/4_a1.jpg)
 
 <ins>Install & enable Firewall (already done previously)</ins> 
-- `sudo apt-get -y install ufw`
--`sudo ufw enable`
--`sudo systemctl status ufw` Verify installation 
-- ![java_install](h4-images/4_a2.jpg)
+- `sudo apt-get -y install ufw`  
+-`sudo ufw enable`  
+-`sudo systemctl status ufw` Verify installation   
+  ![java_install](h4-images/4_a2.jpg)
 
-<ins>Donwload WebGoat JAR</ins> 
-- Install wget first:
-   -`sudo apt-get update && sudo apt-get install wget -y`
-   -`wget –version`  (GNU Wget 1.21.3) Verify installation 
+<ins>Donwload WebGoat JAR</ins>   
+- Install wget first:  
+   -`sudo apt-get update && sudo apt-get install wget -y`  
+   -`wget –version`  (GNU Wget 1.21.3) Verify installation   
 - Note, port change did  not work with the lates version, so the version shown in the course materials was used instead
-   -` wget https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar`   (Ver  2023.4) 
-   -(`wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar`)  (Newest WebGoat version (v2023.8) at: https://github.com/WebGoat/WebGoat/releases)
-- ![java_install](h4-images/4_a3.jpg)
+   -` wget https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar`   (Ver  2023.4)   
+   -(`wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar`)    
+   (Newest WebGoat version (v2023.8) at: https://github.com/WebGoat/WebGoat/releases)
+  ![java_install](h4-images/4_a3.jpg)  
 
-<ins>Run WebGoat on another port (change ports)</ins> 
-- `java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.4.jar`
-(-`java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.8.jar`) Newest version port change did not work and still ran on port 8080 instead.
-![java_install](h4-images/4_a4.jpg)
+<ins>Run WebGoat on another port (change ports)</ins>   
+- `java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.4.jar`  
+(-`java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.8.jar`) Newest version port change did not work and still ran on port 8080 instead.  
+ ![java_install](h4-images/4_a4.jpg)  
 
-- Navigate to URL: http://127.0.0.1:8888/WebGoat     
-- Once the login page is accessed at URL http://127.0.0.1:8888/WebGoat, register with a username and password of your own (admin password are printed on terminal output)
--![java_install](h4-images/4_a6.jpg)
+- Navigate to URL: http://127.0.0.1:8888/WebGoat       
+- Once the login page is accessed at URL http://127.0.0.1:8888/WebGoat, register with a username and password of your own (admin password are printed on terminal output)  
+ ![java_install](h4-images/4_b1.jpg)
 
 ### <ins>References</ins>  
 - Karvinen 2021: Install Debian on Virtualbox - Try Web Hacking on New Webgoat 2023.4 at https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/ 
