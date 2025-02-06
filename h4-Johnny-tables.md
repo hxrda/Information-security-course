@@ -95,13 +95,13 @@
 <ins>Install Java</ins>  
 - `sudo apt-get update`
 - `sudo apt-get install openjdk-17-jre`
-- `java –version` (opendjk 17.04.14 2025-01-21) Verify installation
+- `java –version` (Verify installation)
   ![java_install](h4-images/4_a1.jpg)
 
 <ins>Install & enable Firewall (already done previously)</ins> 
 - `sudo apt-get -y install ufw`  
 -`sudo ufw enable`  
--`sudo systemctl status ufw` Verify installation   
+-`sudo systemctl status ufw` (Verify installation)   
   ![java_install](h4-images/4_a2.jpg)
 
 <ins>Donwload WebGoat JAR</ins>   
@@ -109,9 +109,8 @@
    -`sudo apt-get update && sudo apt-get install wget -y`  
    -`wget –version`  (GNU Wget 1.21.3) Verify installation   
 - Note, port change did  not work with the lates version, so the version shown in the course materials was used instead  
-   -` wget https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar`   (Ver  2023.4)   
-   -(`wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar`)    
-   (Newest WebGoat version (v2023.8) at: https://github.com/WebGoat/WebGoat/releases)
+   -` wget https://github.com/WebGoat/WebGoat/releases/download/v2023.4/webgoat-2023.4.jar` (Ver  2023.4)   
+   -(`wget https://github.com/WebGoat/WebGoat/releases/download/v2023.8/webgoat-2023.8.jar`) https://github.com/WebGoat/WebGoat/releases)
   ![java_install](h4-images/4_a3.jpg)  
 
 <ins>Run WebGoat on another port (change ports)</ins>   
