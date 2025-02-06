@@ -87,7 +87,7 @@
   - Sanitize and validate user inputs to prevent SQL injection vulnerabilities
 
 
-- ### <ins>References</ins>  
+- <ins>References</ins>  
   - Munroe: xkcd 327: Exploits of a Mom at https://xkcd.com/327/ 
 
 
@@ -115,7 +115,7 @@
 
 <ins>Run WebGoat on another port (change ports)</ins>   
 - `java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.4.jar`  
-(-`java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.8.jar`)  
+- (`java -Dfile.encoding=UTF-8 -Dwebgoat.port=8888 -Dwebwolf.port=9090 -jar webgoat-2023.8.jar`)  
  Newest version port change did not work and still ran on port 8080 instead.  
  ![java_install](h4-images/4_a4.jpg)  
 
@@ -123,7 +123,7 @@
 - Once the login page is accessed at URL http://127.0.0.1:8888/WebGoat, register with a username and password of your own (admin password are printed on terminal output)  
  ![java_install](h4-images/4_b1.jpg)
 
-### <ins>References</ins>  
+<ins>References</ins>  
 - Karvinen 2021: Install Debian on Virtualbox - Try Web Hacking on New Webgoat 2023.4 at https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/ 
 
 ## B) F12. Solve Webgoat 2023.4: General: Developer tools
