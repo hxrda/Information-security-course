@@ -127,10 +127,31 @@
 - Karvinen 2021: Install Debian on Virtualbox - Try Web Hacking on New Webgoat 2023.4 at https://terokarvinen.com/2023/webgoat-2023-4-ethical-web-hacking/ 
 
 ## B) F12. Solve Webgoat 2023.4: General: Developer tools
-### <ins>References</ins>  
+<ins>To open developer tools either:</ins>  
+1.	In the browser, right-click anywhere browser & select "Inspect".
+2.	In the browser menu, go to "More tools" and select "Developer tools".
+3.	F12 or Ctrl + Shift + I
 
-## C) Not outdated. Update all operating system and all applications in your Linux.
-### <ins>References</ins>  
+<ins>Try it! Using the Console</ins>  
+- In the task, a javascript function `webgoat.customjs.phoneHome()` was invoked and from it’s output, the random phonenumber field was submitted.
+ ![console](h4-images/4_b3-1.jpg)
+ ![console](h4-images/4_b3-2.jpg)
+
+<ins>Try it! Working with the Network tab</ins>
+- In the task, the network tab was used to find a specific HTTP request and a randomized number associated with it had to be submitted. 
+- A http request was made by pushing the “Go!” button. Afterwards, the specific invoked request could be found under the filename “network” and the networkNum was found in the request tab. 
+ ![network](h4-images/4_b4-1.jpg)
+ ![network](h4-images/4_b4-1.jpg)
+
+
+## C) Not outdated  
+- To update all OS and all applications in the Linux system:
+   - `sudo apt-get update`
+   - `sudo apt-get -y dist-upgrade`
+   - `sudo reboot`   (if first full upgrade)
+
+<ins>References</ins>  
+- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
 
 ## D) Sequel. Solve SQLZoo
 ### <ins>References</ins> 
