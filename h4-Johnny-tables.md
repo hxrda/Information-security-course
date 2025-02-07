@@ -141,7 +141,7 @@
 - In the task, the network tab was used to find a specific HTTP request and a randomized number associated with it had to be submitted. 
 - A http request was made by pushing the “Go!” button. Afterwards, the specific invoked request could be found under the filename “network” and the networkNum was found in the request tab. 
  ![network](h4-images/4_b4-1.jpg)
- ![network](h4-images/4_b4-1.jpg)
+ ![network](h4-images/4_b4-2.jpg)
 
 
 ## C) Not outdated  
