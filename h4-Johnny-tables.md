@@ -190,9 +190,24 @@
    - Payloads that trigger time delays within the executed query and looking for response time differences
  
 - SQL injection:
-   - Inject `' or 1=1--` to the URL
-   - `https://0a1a002704b233e6804dee5500760028.web-security-academy.net/filter?category=<ins>' or 1=1--</ins>`
+   - Inject `' or 1=1--` to the URL:
+      - `https://0a1a002704b233e6804dee5500760028.web-security-academy.net/filter?category=' or 1=1--`
+   - Resulting SQL query:
+      - `SELECT * FROM products WHERE category = '' OR 1=1--' AND released = 1;`
+ ![select](h4-images/4_e1.jpg)
+   
+- How it works:  
+   - The injection modifies the WHERE clause of the query so that it evaluates always to 'true'
+   - Everything after `--` is interpreted as a comment. Thus the rogue quote mark and the released=1 are ignored.
+   - The condition 1=1 evaluates always to true.
+   - The full query tells to select all rows from the table where either category is nothing or the conditional statement equals to true. Since 1=1 is always true, restrictions are bypassed, all rows (aka. released and unreleased products) will be displayed and the attacker gains access to confidential/hidden data. 
 
 <ins>References</ins>  
+- Portswigger (2025). What is SQL Injection? Tutorial & Examples | Web Security Academy. Available at: https://portswigger.net/web-security/sql-injection#what-is-sql-injection-sqli.
+- Portswigger (2025). What is SQL Injection? Tutorial & Examples | Web Security Academy. Available at: https://portswigger.net/web-security/sql-injection#sql-injection-
+- PortSwigger (2025). What is SQL Injection? Tutorial & Examples | Web Security Academy. portswigger.net. Available at: https://portswigger.net/web-security/sql-injection#how-to-detect-sql-injection-vulnerabilities.
+- Community solutions at portswigger.net. (2025). Lab: SQL injection vulnerability in WHERE clause allowing retrieval of hidden data | Web Security Academy. Available at: https://portswigger.net/web-security/sql-injection/lab-retrieve-hidden-data.
+
+‌
 
 
