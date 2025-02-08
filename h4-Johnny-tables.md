@@ -153,10 +153,46 @@
 <ins>References</ins>  
 - Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
 
-## D) Sequel. Solve SQLZoo
-### <ins>References</ins> 
+## D) Sequel. Solve SQLZoo  
+<ins>0 SELECT Basics</ins>  
+1. `WHERE name = 'France'` ->  `WHERE name = 'Germany'`
+ ![select](h4-images/4_d1.jpg)
 
-## E) Solve Portswigger Labs: SQL injection vulnerability
-### <ins>References</ins>  
+2. `WHERE name IN ('Brazil', 'Russia', 'India', 'China')` -> `WHERE name IN ('Sweden', 'Norway', 'Denmark')`
+ ![select](h4-images/4_d2.jpg)
+
+3. `WHERE area BETWEEN 250000 AND 300000` -> `WHERE area BETWEEN 200000 AND 250000`
+ ![select](h4-images/4_d3.jpg)
+
+<ins>2 SELECT from World</ins>  
+1. No changes required. 
+![select](h4-images/4_d4.jpg)
+
+3. `WHERE population = 64105700` -> `WHERE population >= 2e8`
+ ![select](h4-images/4_d5.jpg)
+
+4. `SELECT name, gdp/population FROM world
+`WHERE population >= 2e8`
+ ![select](h4-images/4_d6.jpg)
+
+<ins>References</ins>   
+- sqlzoo.net. (2025). SQLZOO. Available at: https://sqlzoo.net/wiki/SQL_Tutorial 
+
+## E) Solve Portswigger Labs: SQL injection vulnerability  
+- The task is to perform a SQL injection attack that causes the application to display one or more unreleased products in addition to released products
+  
+- Original SQL query (when user selects a product category in the application):
+   - `SELECT * FROM products WHERE category = 'Gifts' AND released = 1;`
+
+- SQL injection vulnerabilities can be detected using paid tools or manually by conducting a systematic set of tests against every entry point of an application. This includes e.g., submitting:
+   -`’` single quote character and searching for errors or anomalies
+   - Boolean conditions and detecting differences in application responses. E.g. conditions: `OR 1=1`, `OR 1=2`
+   - Payloads that trigger time delays within the executed query and looking for response time differences
+ 
+- SQL injection:
+   - Inject `' or 1=1--` to the URL
+   - `https://0a1a002704b233e6804dee5500760028.web-security-academy.net/filter?category=<ins>' or 1=1--</ins>`
+
+<ins>References</ins>  
 
 
