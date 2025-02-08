@@ -156,24 +156,24 @@
 ## D) Sequel. Solve SQLZoo  
 <ins>0 SELECT Basics</ins>  
 1. `WHERE name = 'France'` ->  `WHERE name = 'Germany'`
- ![select](h4-images/4_d1.jpg)
+ ![select](h4-images/4_d1.png)
 
 2. `WHERE name IN ('Brazil', 'Russia', 'India', 'China')` -> `WHERE name IN ('Sweden', 'Norway', 'Denmark')`
- ![select](h4-images/4_d2.jpg)
+ ![select](h4-images/4_d2.png)
 
 3. `WHERE area BETWEEN 250000 AND 300000` -> `WHERE area BETWEEN 200000 AND 250000`
- ![select](h4-images/4_d3.jpg)
+ ![select](h4-images/4_d3.png)
 
 <ins>2 SELECT from World</ins>  
 1. No changes required. 
-![select](h4-images/4_d4.jpg)
+![select](h4-images/4_d4.png)
 
 3. `WHERE population = 64105700` -> `WHERE population >= 2e8`
- ![select](h4-images/4_d5.jpg)
+ ![select](h4-images/4d_5.png)
 
 4. `SELECT name, gdp/population FROM world
 `WHERE population >= 2e8`
- ![select](h4-images/4_d6.jpg)
+ ![select](h4-images/4d_6.png)
 
 <ins>References</ins>   
 - sqlzoo.net. (2025). SQLZOO. Available at: https://sqlzoo.net/wiki/SQL_Tutorial 
@@ -185,7 +185,7 @@
    - `SELECT * FROM products WHERE category = 'Gifts' AND released = 1;`
 
 - SQL injection vulnerabilities can be detected using paid tools or manually by conducting a systematic set of tests against every entry point of an application. This includes e.g., submitting:
-   -`’` single quote character and searching for errors or anomalies
+   - `'` single quote character and searching for errors or anomalies
    - Boolean conditions and detecting differences in application responses. E.g. conditions: `OR 1=1`, `OR 1=2`
    - Payloads that trigger time delays within the executed query and looking for response time differences
  
