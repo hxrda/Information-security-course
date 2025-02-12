@@ -2,11 +2,13 @@
 
 ## X) Summaries
 
-### <ins>Applied Cryptography: Chapter 1</ins>    
+### <ins>Applied Cryptography: Chapter 1</ins>   
 
-<ins>Subtitle </ins> 
+- 
+
+<ins>Subtitle</ins> 
 -
-<ins>References </ins> 
+<ins>References</ins> 
 - 
 
 
