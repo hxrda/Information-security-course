@@ -226,4 +226,4 @@ Only recipient’s private key can decrypt the message after this point (recipie
 ## D) Password manager, open and cloudless
 
 - TBA
-- Bitwarden vs. KeyPass -> check these ones out 
+- Bitwarden vs. KeyPass/KeePassXC -> check these ones out 
