@@ -218,4 +218,12 @@ Only recipient’s private key can decrypt the message after this point (recipie
 ![ssh](h5-images/b_3.png)
   
 <ins>References</ins> 
-- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/ 
+- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
+
+## C) Pretty Good indeed. Encrypt and decrypt a message with 'gnupg', using PGP public key cryptography.
+-TBA
+
+## D) Password manager, open and cloudless
+
+- TBA
+- Bitwarden vs. KeyPass -> check these ones out 
