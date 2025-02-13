@@ -38,13 +38,13 @@
 
 - <ins>Types of key-based algorithms:</ins>
 	1. Symmetric algorithms
-	  - Encryption methods where the same key is used for both encryption and decryption. Both sender and receiver must agree on a shared key before secure communication is possible. The key must remain a secret between the communication parties.
-	  - Subcategories:
-	      a) Stream ciphers which operate on plaintext one bit/byte at a time
-	      b) Block ciphers operating on the plaintext in groups of bits (e.g. 64 bits). 
+		- Encryption methods where the same key is used for both encryption and decryption. Both sender and receiver must agree on a shared key before secure communication is possible. The key must remain a secret between the communication parties.
+		- Subcategories:
+			a) Stream ciphers which operate on plaintext one bit/byte at a time
+			b) Block ciphers operating on the plaintext in groups of bits (e.g. 64 bits). 
 	2. Asymmetric / Public-Key algorithms
-	- Encryption methods where two different keys are used – public key for encryption and private key for decryption. The public key can be distributed publicly while the corresponding private key should remain a secret.
-	- (With digital signatures, though, private keys are used for encryption and public keys for decryption)
+		- Encryption methods where two different keys are used – public key for encryption and private key for decryption. The public key can be distributed publicly while the corresponding private key should remain a secret.
+		- (With digital signatures, though, private keys are used for encryption and public keys for decryption)
 
 - <ins>Computer algorithms:</ins>
   - Symmetric:
@@ -54,15 +54,15 @@
   	- DSA
  
 - <ins>Algorithm security:</ins>
-  - If the value gained from breaking an algorithm is less than the cost of breaking it, the less likely it will be targeted
-  - Unconditionally secure algorithms remain secure regardless of the amount of resources the attacker has (computational power or information). 
-  -  Computationally secure algorithms are considered secure as long as the attacker doesn’t have enough resources (computational power, information, time) to break the encryption 
+	- If the value gained from breaking an algorithm is less than the cost of breaking it, the less likely it will be targeted
+	- Unconditionally secure algorithms remain secure regardless of the amount of resources the attacker has (computational power or information). 
+	- Computationally secure algorithms are considered secure as long as the attacker doesn’t have enough resources (computational power, information, time) to break the encryption 
 
 - <ins>Categories of breaking an algorithm (increasing order of severity:</ins>
-  - Total break
-  - Global deduction
-  - Instance/local deduction
-  - Information deduction
+	- Total break
+	- Global deduction
+	- Instance/local deduction
+	- Information deduction
 
 <ins>Cryptoanalysis</ins> 
 - Assumptions:
@@ -70,19 +70,19 @@
   - Strength/secrecy of the cryptosystem resides entirely in the key, not the algorithm
     
 - Types of cryptoanalytic attacks:
- 	a) Text-based attacks (Primarily target the ciphertext or original plaintext):
-	  - Ciphertext-only attack (deduce plaintext or key based on ciphertext)
-	  - Known-plaintext attack (deduce key(s) based on cipher- and plaintexts)
-	  - Chosen-plaintext attack (deduce key(s) based on specific cipher- and plaintexts)
-	  - Adaptive-chosen-plaintext attack (dynamically deduce key(s) based by adapting the chosen cipher- and plaintexts based on previous results)
-	  - Chosen-ciphertext attack (deduce key(s) based on chosen cipher- and plaintexts)
+	a) Text-based attacks (Primarily target the ciphertext or original plaintext):
+		- Ciphertext-only attack (deduce plaintext or key based on ciphertext)
+		- Known-plaintext attack (deduce key(s) based on cipher- and plaintexts)
+		- Chosen-plaintext attack (deduce key(s) based on specific cipher- and plaintexts)
+		- Adaptive-chosen-plaintext attack (dynamically deduce key(s) based by adapting the chosen cipher- and plaintexts based on previous results)
+		- Chosen-ciphertext attack (deduce key(s) based on chosen cipher- and plaintexts)
 	
 	b) Key-based attacks (Primarily utilizes knowledge about relationships between keys ):
-	  - Chosen-key attack
-	  
+		- Chosen-key attack
+	
 	c) Other attacks
-	  - Rubber-hose cryptanalysis. Involves threats and blackmail for obtaining a key
-	  - Purchase-key attack. Involves using bribery for obtaining a key
+		- Rubber-hose cryptanalysis. Involves threats and blackmail for obtaining a key
+		- Purchase-key attack. Involves using bribery for obtaining a key
 
 
 <ins>Classical and  Pre-computer cryptography</ins> 
