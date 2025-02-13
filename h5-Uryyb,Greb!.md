@@ -69,13 +69,13 @@
   - The cryptanalyst has complete knowledge of the cryptographic algorithm and its implementation
   - Strength/secrecy of the cryptosystem resides entirely in the key, not the algorithm
     
-- Types of cryptoanalytic attacks:  
-	a) Text-based attacks (Primarily target the ciphertext or original plaintext):  
-		- Ciphertext-only attack (deduce plaintext or key based on ciphertext)
-		- Known-plaintext attack (deduce key(s) based on cipher- and plaintexts)
-		- Chosen-plaintext attack (deduce key(s) based on specific cipher- and plaintexts)
-		- Adaptive-chosen-plaintext attack (dynamically deduce key(s) based by adapting the chosen cipher- and plaintexts based on previous results)
-		- Chosen-ciphertext attack (deduce key(s) based on chosen cipher- and plaintexts)
+- Types of cryptoanalytic attacks:    
+	a) Text-based attacks (Primarily target the ciphertext or original plaintext):    
+		- Ciphertext-only attack (deduce plaintext or key based on ciphertext)  
+		- Known-plaintext attack (deduce key(s) based on cipher- and plaintexts)  
+		- Chosen-plaintext attack (deduce key(s) based on specific cipher- and plaintexts)  
+		- Adaptive-chosen-plaintext attack (dynamically deduce key(s) based by adapting the chosen cipher- and plaintexts based on previous results)  
+		- Chosen-ciphertext attack (deduce key(s) based on chosen cipher- and plaintexts)  
 	
 	b) Key-based attacks (Primarily utilizes knowledge about relationships between keys ):
 		- Chosen-key attack
