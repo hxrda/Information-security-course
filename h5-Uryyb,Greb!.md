@@ -37,11 +37,11 @@
 - The best algorithms are the ones that have been made public, have been attacked by leading cryptographers for years, and have yet to been broken. Good quality algorithms rely on peer review.
 
 - <ins>Types of key-based algorithms:</ins>
-	1. Symmetric algorithms
-		- Encryption methods where the same key is used for both encryption and decryption. Both sender and receiver must agree on a shared key before secure communication is possible. The key must remain a secret between the communication parties.
-		- Subcategories:
-			a) Stream ciphers which operate on plaintext one bit/byte at a time
-			b) Block ciphers operating on the plaintext in groups of bits (e.g. 64 bits). 
+	1. Symmetric algorithms  
+		- Encryption methods where the same key is used for both encryption and decryption. Both sender and receiver must agree on a shared key before secure communication is possible. The key must remain a secret between the communication parties.  
+		- Subcategories:  
+			- Stream ciphers which operate on plaintext one bit/byte at a time
+			- Block ciphers operating on the plaintext in groups of bits (e.g. 64 bits). 
 	2. Asymmetric / Public-Key algorithms
 		- Encryption methods where two different keys are used – public key for encryption and private key for decryption. The public key can be distributed publicly while the corresponding private key should remain a secret.
 		- (With digital signatures, though, private keys are used for encryption and public keys for decryption)
@@ -69,8 +69,8 @@
   - The cryptanalyst has complete knowledge of the cryptographic algorithm and its implementation
   - Strength/secrecy of the cryptosystem resides entirely in the key, not the algorithm
     
-- Types of cryptoanalytic attacks:
-	a) Text-based attacks (Primarily target the ciphertext or original plaintext):
+- Types of cryptoanalytic attacks:  
+	a) Text-based attacks (Primarily target the ciphertext or original plaintext):  
 		- Ciphertext-only attack (deduce plaintext or key based on ciphertext)
 		- Known-plaintext attack (deduce key(s) based on cipher- and plaintexts)
 		- Chosen-plaintext attack (deduce key(s) based on specific cipher- and plaintexts)
