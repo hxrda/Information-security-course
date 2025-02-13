@@ -77,10 +77,10 @@
 		- Adaptive-chosen-plaintext attack (dynamically deduce key(s) based by adapting the chosen cipher- and plaintexts based on previous results)  
 		- Chosen-ciphertext attack (deduce key(s) based on chosen cipher- and plaintexts)  
 	
-	b) Key-based attacks (Primarily utilizes knowledge about relationships between keys ):
-		- Chosen-key attack
+	b) Key-based attacks (Primarily utilizes knowledge about relationships between keys):  
+		- Chosen-key attack  
 	
-	c) Other attacks
+	c) Other attacks  
 		- Rubber-hose cryptanalysis. Involves threats and blackmail for obtaining a key
 		- Purchase-key attack. Involves using bribery for obtaining a key
 
