@@ -170,4 +170,50 @@ Only recipient’s private key can decrypt the message after this point (recipie
 
 
 <ins>References</ins> 
-- Karvinen 2023: PGP - Send Encrypted and Signed Message – gpg at https://terokarvinen.com/2023/pgp-encrypt-sign-verify/ 
+- Karvinen 2023: PGP - Send Encrypted and Signed Message – gpg at https://terokarvinen.com/2023/pgp-encrypt-sign-verify/
+
+## A) Install OpenSSH server & connect to it using SSH client
+
+<ins>Installation:</ins>   
+- `sudo apt-get update`
+- `sudo apt-get install ssh`  (installs both open ssh client & sevrer)
+- `sudo systemctl start ssh`
+- `sudo systemctl status ssh `
+
+<ins>Establish SSH connection:</ins>   
+- Syntax for establishing SSH connection to the destination: `ssh user@hostname`
+- `whoami` tells the username
+- `ssh rodah@localhost` & enter password
+- `w` displays currently logged-in users
+ 
+![ssh](h5-images/a_33.png)
+
+<ins>Terminate SSH connection:</ins>  
+- `exit`
+  
+<ins>References</ins> 
+- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/ 
+- Kaplarevic, V. (2024). How to Enable SSH on Debian 12. Available at: https://phoenixnap.com/kb/how-to-enable-ssh-on-debian.
+
+
+## B) Automate SSH connection using public keys
+
+<ins>Generate a key pair:</ins> 
+- `ssh-keygen` (proceed w/ defaults, skip passphrase)
+  
+<ins>Verify that the keypair has been generated:</ins> 
+- `ls .ssh`
+	- Private/ secret key: `id_rsa`
+	- Publick key: `id_rsa.pub`
+ ![ssh](h5-images/b_11.png)
+
+<ins>Copy the public key to the sshd server:</ins> 
+- Syntax: `ssh-copy-id user@machine` 
+- `ssh-copy-id rodah@localhost`
+
+<ins>Test automated connection:</ins>
+- `ssh rodah@localhost ` again, but now without having to provide a password
+ ![ssh](h5-images/b_3.png)
+  
+<ins>References</ins> 
+- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/ 
