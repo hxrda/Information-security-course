@@ -37,12 +37,12 @@
 - The best algorithms are the ones that have been made public, have been attacked by leading cryptographers for years, and have yet to been broken. Good quality algorithms rely on peer review.
 
 - <ins>Types of key-based algorithms:</ins>
-1. Symmetric algorithms
-  - Encryption methods where the same key is used for both encryption and decryption. Both sender and receiver must agree on a shared key before secure communication is possible. The key must remain a secret between the communication parties.
-  - Subcategories:
-      a) Stream ciphers which operate on plaintext one bit/byte at a time
-      b) Block ciphers operating on the plaintext in groups of bits (e.g. 64 bits). 
-2. Asymmetric / Public-Key algorithms
+	1. Symmetric algorithms
+	  - Encryption methods where the same key is used for both encryption and decryption. Both sender and receiver must agree on a shared key before secure communication is possible. The key must remain a secret between the communication parties.
+	  - Subcategories:
+	      a) Stream ciphers which operate on plaintext one bit/byte at a time
+	      b) Block ciphers operating on the plaintext in groups of bits (e.g. 64 bits). 
+	2. Asymmetric / Public-Key algorithms
 	- Encryption methods where two different keys are used – public key for encryption and private key for decryption. The public key can be distributed publicly while the corresponding private key should remain a secret.
 	- (With digital signatures, though, private keys are used for encryption and public keys for decryption)
 
@@ -59,10 +59,10 @@
   -  Computationally secure algorithms are considered secure as long as the attacker doesn’t have enough resources (computational power, information, time) to break the encryption 
 
 - <ins>Categories of breaking an algorithm (increasing order of severity:</ins>
-  1. Total break
-  2. Global deduction
-  3. Instance/local deduction
-  4. Information deduction
+  - Total break
+  - Global deduction
+  - Instance/local deduction
+  - Information deduction
 
 <ins>Cryptoanalysis</ins> 
 - Assumptions:
@@ -70,21 +70,19 @@
   - Strength/secrecy of the cryptosystem resides entirely in the key, not the algorithm
     
 - Types of cryptoanalytic attacks:
- a) Text-based attacks
-  - Primarily target the ciphertext or original plaintext
-  1. Ciphertext-only attack (deduce plaintext or key based on ciphertext)
-  2. Known-plaintext attack (deduce key(s) based on cipher- and plaintexts)
-  3. Chosen-plaintext attack (deduce key(s) based on specific cipher- and plaintexts)
-  4. Adaptive-chosen-plaintext attack (dynamically deduce key(s) based by adapting the chosen cipher- and plaintexts based on previous results)
-  5. Chosen-ciphertext attack (deduce key(s) based on chosen cipher- and plaintexts)
-
-b) Key-based attacks
-	- Primarily utilizes knowledge about relationships between keys 
-  6. Chosen-key attack
-  
-c) Other attacks
-  7. Rubber-hose cryptanalysis. Involves threats and blackmail for obtaining a key
-  8. Purchase-key attack. Involves using bribery for obtaining a key
+ 	a) Text-based attacks (Primarily target the ciphertext or original plaintext):
+	  - Ciphertext-only attack (deduce plaintext or key based on ciphertext)
+	  - Known-plaintext attack (deduce key(s) based on cipher- and plaintexts)
+	  - Chosen-plaintext attack (deduce key(s) based on specific cipher- and plaintexts)
+	  - Adaptive-chosen-plaintext attack (dynamically deduce key(s) based by adapting the chosen cipher- and plaintexts based on previous results)
+	  - Chosen-ciphertext attack (deduce key(s) based on chosen cipher- and plaintexts)
+	
+	b) Key-based attacks (Primarily utilizes knowledge about relationships between keys ):
+	  - Chosen-key attack
+	  
+	c) Other attacks
+	  - Rubber-hose cryptanalysis. Involves threats and blackmail for obtaining a key
+	  - Purchase-key attack. Involves using bribery for obtaining a key
 
 
 <ins>Classical and  Pre-computer cryptography</ins> 
@@ -94,12 +92,12 @@ c) Other attacks
 - Character- based ciphers:
   - Differ from modern algorithms in that they work on characters instead of bits. 
   - Most good modern cryptographic algorithms still combine elements of substitution and transposition.
-   a) Substitution ciphers
-  	- Involve replacing each character of the plaintext with another character in the ciphertext
-  	- Types: Simple (e.g. Caesar Cipher), Homophonic, Polygram, Polyalphabetic
-   b) Transposition ciphers
-  	- Involve rearranging the order of characters in a plaintext to create ciphertext
-  	- E.g., columnar transposition
+	   a) Substitution ciphers
+	  	- Involve replacing each character of the plaintext with another character in the ciphertext
+	  	- Types: Simple (e.g. Caesar Cipher), Homophonic, Polygram, Polyalphabetic
+	   b) Transposition ciphers
+	  	- Involve rearranging the order of characters in a plaintext to create ciphertext
+	  	- E.g., columnar transposition
 - Mechanical encryption devices
 	- Rotor machines which automate encryption by using rotating rotors to perform substitutions (e.g. the Enigma)
 
