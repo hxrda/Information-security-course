@@ -4,12 +4,31 @@
 
 ### <ins>Applied Cryptography: Chapter 1</ins>   
 
-- 
+<ins>Basic terminology</ins> 
+- Cryptography = The science or practice of securing communication through converting readable data/messages (plaintext) into an unreadable form (ciphertext) and the other way around.
+- <ins>Cryptoanalysis</ins> = The practice of analyzing and breaking ciphertext to reveal the plaintext without the correct key. An attempted cryptoanalysis is referred to as an attack.
+- Cryptology = The branch of mathematics studying both cryptography (creating secure communication methods) and cryptoanalysis (breaking the methods). 
+- Plaintext (M) = The original readable message to be encrypted. Can be in the form of a txt, audio, video, image files etc.
+- Ciphertext (C) = Encrypted, unreadable version of the plaintext
+- Encryption = process of converting plaintext into unreadable ciphertext
+  - Encryption function: `E(M) = C` or  `EK(M) = C`
+- Decryption = Process of converting ciphertext back into readable plaintext
+-   Decryption function: `D(C) = M` or `DK(C) = M`
+- Cipher / Cryptographic algorithm = Mathematical function used for encryption or decryption. 
+- Code = A cryptosystem dealing with linguistic units (words, phrases. Sentences). Useful in specific circumstances, less flexible than ciphers. 
+- Key (K) = A value used in encryption and decryption operations. Determines how algorithms process the data. 
+- Keyspace = The range of possible values of a key
+- Cryptosystem = The algorithm, plus all possible plaintexts, ciphertexts, and keys
+- Compromise = The loss of a key through non-cryptanalytic means
 
 <ins>Subtitle</ins> 
 -
+<ins>Subtitle</ins> 
+-
+<ins>Subtitle</ins> 
+-
 <ins>References</ins> 
-- 
+- Schneier, B.2015: Applied Cryptography: Chapter 1: Foundations. O’Reilly Online Learning. Available at: https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/08_chap01.html#chap01-sec001
 
 
 ### <ins>PGP – Send Encrypted and Signed Message</ins>  
