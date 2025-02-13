@@ -204,8 +204,9 @@ Only recipient’s private key can decrypt the message after this point (recipie
 <ins>Verify that the keypair has been generated:</ins> 
 - `ls .ssh`
 	- Private/ secret key: `id_rsa`
-	- Publick key: `id_rsa.pub`
- ![ssh](h5-images/b_11.png)
+	- Public key: `id_rsa.pub`  
+
+![ssh](h5-images/b_11.png)
 
 <ins>Copy the public key to the sshd server:</ins> 
 - Syntax: `ssh-copy-id user@machine` 
@@ -213,7 +214,8 @@ Only recipient’s private key can decrypt the message after this point (recipie
 
 <ins>Test automated connection:</ins>
 - `ssh rodah@localhost ` again, but now without having to provide a password
- ![ssh](h5-images/b_3.png)
+
+![ssh](h5-images/b_3.png)
   
 <ins>References</ins> 
 - Karvinen 2025 - Information security at https://terokarvinen.com/information-security/ 
