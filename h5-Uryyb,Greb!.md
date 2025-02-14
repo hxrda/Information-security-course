@@ -284,6 +284,7 @@ B) Copy “Another user's” public key to “Main user”
 	- `gpg --import another_user.pub`
 	- `gpg --sign-key "C510 6B6E BF7D 8BB1 0CCD  0196 30C1 F4E9 4A18 9B7B"`
 	- `gpg --fingerprint`
+   
 ![pgp](h5-images/c_8.png)    
 
 
@@ -311,7 +312,7 @@ B) Copy “Another user's” public key to “Main user”
 - Simulate network communications/file transfer with copying the file:
 	- `cp -v another_user/encrypted.pgp .`
 - Decrypt the message:
-	- `gpg --decrypt encrypted.pgp`
+	- `gpg --decrypt encrypted.pgp`  
 ![pgp](h5-images/c_10.png)    
 
 <ins>References</ins> 
