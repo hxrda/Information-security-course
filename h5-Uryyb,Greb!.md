@@ -221,9 +221,106 @@ Only recipient’s private key can decrypt the message after this point (recipie
 - Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
 
 ## C) Pretty Good indeed. Encrypt and decrypt a message with 'gnupg', using PGP public key cryptography.
--TBA
+
+<ins>0. Install the 'gpg' encryption tool</ins>  
+-`sudo apt-get update`
+-`sudo apt-get install gpg micro psmisc` 
+
+<ins>1. Generate a key pair</ins>  
+- The key pair will consist of public key and a private/secret key
+- For "Main user" (us)
+	- `gpg --gen-key`
+	- Give real name & email address. Leave password/passphrase as empty when prompted
+	- The key pair is saved to the home directory under .gnupg
+![pgp](h5-images/c_1.png)
+![pgp](h5-images/c_2.png)   
+
+- Simulate “Another user”:
+	- `mkdir another_user/`  (in home directory)
+	- `chmod 700 another_user /` or alternatively `chmod og-rwx another_user/ `
+	-  `cd another_user`
+	- `gpg --homedir . --fingerprint`
+	- Every command run in "Another user's" directory should start with `gpg --homedir .`
+![pgp](h5-images/c_4.png)   
+
+
+
+<ins>2. Export public keys</ins>  
+- Export "Main user's" public key 
+	- `gpg --export --armor --output roda.pub`
+	- Command parameters:
+		-    `--export` Export my public key
+		-   ` --armor` Use only ASCII characters. Allows the output to be viewed and copy-pasted.
+		-    `--output <filename>` Save the output into a specified file
+	- Verify that the public key has been generated & display the 4 first lines of the file
+![pgp](h5-images/c_3.png)
+
+- Export "Another user’s" public key:
+	- `gpg --homedir . --gen-key`
+	- Repeat the steps (name, email, no passphrase)
+![pgp](h5-images/c_5.png)   
+
+- `gpg --homedir . --export --armor --output another_user.pub`
+
+
+<ins>3. Exchange public keys</ins>  
+
+A) Copy “Main user's” public key to “Another user”
+	- `cp -v roda.pub another_user/` Simulate file transfer over a network with copy
+- Import the public key
+	- `gpg --homedir . --import roda.pub`
+- Verify with fingerprint that the public key really belongs to “Main user”
+	- `gpg --homedir . --fingerprint`
+![pgp](h5-images/c_6.png)    
+
+- Sign the public key as trusted and check the trust
+	- `gpg --homedir . --sign-key "39CE B60B FD5B 8D7A F641  36FE 70FF 09D2 E340 D22A"`
+	- `gpg --homedir . --fingerprint`
+![pgp](h5-images/c_7.png)    
+
+B) Copy “Another user's” public key to “Main user”
+- Copy, import, sign & verify the key
+	- `cp -v another_user/another_user.pub .`Simulate file transfer over a network  (in the home directory)
+	- `gpg --import another_user.pub`
+	- `gpg --sign-key "C510 6B6E BF7D 8BB1 0CCD  0196 30C1 F4E9 4A18 9B7B"`
+	- `gpg --fingerprint`
+![pgp](h5-images/c_8.png)    
+
+
+
+<ins>4. Encrypt & send a message</ins>  
+
+- “Another user” is the sender in the scenario
+	- `cd ~/another_user/`
+- Create message (with content)
+	- `nano message.txt`
+- Encrypt & sign the message with private key
+	- `gpg --homedir . --encrypt --recipient henein.roda@gmail.com --sign --output encrypted.pgp --armor message.txt`
+	- Command parameters:
+		- `--encrypt` Encrypt the message
+		- ` --recipient tero@example.com.invalid` To key identified by email address. Alternatively, fingerprints can be used
+		- ` --sign ` Sign the message using private key (“Another user’s”)
+		- `--armor ` Use printable ASCII characters for the message.
+		- `--output <filename>` Save the encrypted message to the specified file
+![pgp](h5-images/c_9.png)    
+
+
+<ins>5. Receive, Decrypt and Verify the message</ins>  
+
+- "Main user” is the receiver in this scenario
+- Simulate network communications/file transfer with copying the file:
+	- `cp -v another_user/encrypted.pgp .`
+- Decrypt the message:
+	- `gpg --decrypt encrypted.pgp`
+![pgp](h5-images/c_10.png)    
+
+<ins>References</ins> 
+- Karvinen 2023: PGP - Send Encrypted and Signed Message – gpg at https://terokarvinen.com/2023/pgp-encrypt-sign-verify/
 
 ## D) Password manager, open and cloudless
 
 - TBA
-- Bitwarden vs. KeyPass/KeePassXC -> check these ones out 
+- Bitwarden vs. KeyPass/KeePassXC -> check these ones out
+
+<ins>References</ins> 
+- 
