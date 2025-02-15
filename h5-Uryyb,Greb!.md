@@ -366,8 +366,8 @@ B) Copy “Another user's” public key to “Main user”
 - To access your stored passwords, launch the application. Provide the db password to the desired KeePassXC database. 
 - Locate your desired entry and copy the password, username etc. to the clipboard. Alternative ways of copying include using toolbar buttons, right-clicking or double-clicking if the option is enabled from settings. The clipboard will be automatically cleared after a few seconds to improve security. 
 
--![ssh](h5-images/d_5.png)
--![ssh](h5-images/d_6.png)  
+![ssh](h5-images/d_5.png)
+![ssh](h5-images/d_6.png)  
 
 4. Backup the database (recommended)
 - It is recommended to regularly backup and store copies of the database file by exporting it to a safe location.
