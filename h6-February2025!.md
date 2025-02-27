@@ -4,7 +4,7 @@
 
 ### <ins>Applied Cryptography: Chapter 2.3 - One-Way Functions</ins>   
 
-<ins>Basics of one-way functions</ins>  
+<ins>Definition of one-way functions</ins>  
 - A one-way function is a function which is easy to compute but difficult to reverse.
   - Given x, computing f(x) is easy. However, given f(x), computing x is difficult even with unlimited time and computing power.  
 
