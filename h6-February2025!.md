@@ -2,11 +2,11 @@
 
 ## X) Summaries
 
-### <ins>Applied Cryptography: Chapter 2.3</ins>   
+### <ins>Applied Cryptography: Chapter 2.3 - One-Way Functions</ins>   
 
 <ins>Basic terminology</ins>
 
-### <ins>Applied Cryptography: Chapter 2.4</ins>   
+### <ins>Applied Cryptography: Chapter 2.4 - One-Way Hash Functions</ins>   
 
 ### <ins>References:</ins>  
 - Schneier, B.2015: Applied Cryptography: Chapter 2: Protocol Building Blocks. O’Reilly Online Learning. Available at: https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02-sec001 
