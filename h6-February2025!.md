@@ -28,9 +28,9 @@
   - Compression function, Contraction function, Message digest, Fingerprint, Cryptographic checksum, Message integrity check (MIC), and Manipulation detection code (MDC).
 
 <ins>Characteristics of one-way hash functions</ins>
-- One-wayness: It’s easy to compute the hash, but unfeasible to reverse the process. The output is not dependent on the input in any observable way
+- One-wayness: It’s easy to compute the hash, but unfeasible to reverse the process. The output is not dependent on the input in any observable way.
 - Publicity: The function’s security relies on its one-wayness and not the process itself. Information about the hash function is publicly disclosed.
-- Avalanche effect: A slight change in input results in a significant change in the output (hash value)
+- Avalanche effect: A slight change in input results in a significant change in the output (hash value).
 - Collision-free: It is difficult to find different inputs/pre-images that result in same hash output. Good one-way hash functions are collision-free. 
 
 <ins>One-way hash functions & keys</ins>
@@ -44,7 +44,7 @@
 ### <ins>References:</ins>  
 - Schneier, B. 2015: Applied Cryptography: Chapter 2: Protocol Building Blocks. O’Reilly Online Learning. Available at: https://learning.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/10_chap02.html#chap02-sec001 
 
-## A) Install Hashcat. Test it with a sample hash
+## A) Install Hashcat. Test it with a sample hash.
 
 <ins>References</ins>
 - Karvinen 2023: PGP - Cracking Passwords with Hashcat at https://terokarvinen.com/2022/cracking-passwords-with-hashcat/ 
