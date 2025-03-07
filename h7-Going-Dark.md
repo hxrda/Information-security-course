@@ -2,7 +2,7 @@
 
 ## X) Summaries
 
-### <ins>1. 7 Things You Should Know About Tor</ins>  
+### <ins>1.) 7 Things You Should Know About Tor</ins>  
 
 - Tor is open-source and used for anonymity, privacy and secure communication by criminals and non-criminals alike. It is e.g. some of the strongest existing anonymity software, but it isn’t particularly more useful for illegal activities compared to other tools available.
 - Tor still seems to be secure at the cryptographic level. Attacks on Tor usually exploit browser vulnerabilities/bugs and user misconfigurations. 
@@ -13,7 +13,7 @@
 - It’s been confirmed that the Tor software doesn’t include a backdoor.
 
 
-### <ins>Hiding Behind the Keyboard: The Tor Browser</ins>  
+### <ins>2.) Hiding Behind the Keyboard: The Tor Browser</ins>  
 
 <ins>Introduction</ins>   
 - Tor browser is a modification of the Firefox browser, used for anonymous communication over the internet.
@@ -29,7 +29,7 @@
   2. Real-time tracking and interception of ongoing communications over Tor.    
 
 <ins>How The Onion Router Works</ins>
--Tor wraps data in multiple layers of encryption (like an onion) and routes it through random relays before reaching the final destination. Each relay removes one encryption layer and forwards the data to the next relay. Each relay only knows the previous and next hop and never the full path.
+- Tor wraps data in multiple layers of encryption (like an onion) and routes it through random relays before reaching the final destination. Each relay removes one encryption layer and forwards the data to the next relay. Each relay only knows the previous and next hop and never the full path.
 - Tor uses elliptic curve cryptography to encrypt the data, which is currently unbreakable with brute force. 
 - The last relay, called the exit relay, is the only part that connects to the internet and the destination. Destinations only see the exit relay’s IP address, not the originating source’s. The connection between Tor relays is always encrypted,. The final link may be unencrypted.
 - Tor changes the relays every 10 minutes, making tracking difficult.
