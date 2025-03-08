@@ -44,11 +44,47 @@
 - Quintin 2014:  7 Things You Should Know About Tor at https://www.eff.org/deeplinks/2014/07/7-things-you-should-know-about-tor 
 - Shavers & Bair 2016: Hiding Behind the Keyboard: The Tor Browser at https://learning.oreilly.com/library/view/hiding-behind-the/9780128033524/
 
-## A) Install TOR browser and access TOR network (.onion addresses).
-- 
+## A) Install TOR browser and access TOR network (.onion addresses)  
+
+- Go to `https://www.torproject.org/download/`to download the browser. The browser will be downloaded in the `Downloads` directory.
+![tor](h7-images/a_1.png)
+![tor](h7-images/a_11.png)
+
+- In the terminal, go to said directory and uncompress the file with `tar -xf tor-browser-linux-x86_64-14.0.7.tar.xz`
+- Goto the tor-browser directory `cd tor-browser`
+- To start the browser, run it as script `./start-tor-browser.desktop`
+![tor](h7-images/a_222.png)
+
+- Connect to Tor with `Connect`
+![tor](h7-images/a_3.png)
+![tor](h7-images/a_4.png)
+
+<ins>References</ins>
+- Karvinen 2025 - Information security at https://terokarvinen.com/information-security/
 
 ## B) Browse TOR network, find, take screenshots and comment
-- search engine for onion sites
-- marketplace
-- forum
-- a site for a well known organization that has a physical street address in the real world
+<ins>Search engine for onion sites</ins>
+- DuckDuckGo seems to be the default search engine. Another well-known option is e.g. Ahmia.
+![tor](h7-images/b_1_duck.png)
+![tor](h7-images/b_1.png)
+![tor](h7-images/b_1_ahmia.png)
+
+<ins>Marketplace</ins>
+- Seems like a fair share of well-known marketplaces have been taken down. One currently running one is Archetyp Market. Archetyp seems to only accept drug-related listings and all transactions are conducted using a private cryptocurrency (Monero). 
+- The marketplace requires user sign-up/login, which I will not be doing for this task.
+![tor](h7-images/b_2.png)
+
+
+<ins>Forum</ins>
+- Dread is a Reddit-like dark web discussion forum. Both operate on the TOR network.
+![tor](h7-images/b_3.png)
+![tor](h7-images/b_4.png)
+
+<ins>A site for a well-known organization which has a physical street address in the real world</ins>
+- The BBC News and The Guardian provide an onion service to allow readers access to news content securely and anonymously, especially in areas with censorship.
+![tor](h7-images/b_6.png)
+![tor](h7-images/b_5.png)
+
+<ins>References</ins>
+- Wikipedia. (2024). List of Tor onion services. Available at: https://en.wikipedia.org/wiki/List_of_Tor_onion_services.
+- Wikipedia. (2025). Archetyp Market. Available at: https://en.wikipedia.org/wiki/Archetyp_Market
